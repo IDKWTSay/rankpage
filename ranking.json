@@ -83,7 +83,13 @@
         "nickname": "\uc775\uba85"
       }
     ],
-    "top_all_time": []
+    "top_all_time": [
+      {
+        "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+        "score": 0.0,
+        "nickname": "\uc775\uba85"
+      }
+    ]
   },
   "cotton1217": {
     "top_7_days": [
@@ -215,7 +221,13 @@
         "nickname": "\uc775\uba85"
       }
     ],
-    "top_all_time": []
+    "top_all_time": [
+      {
+        "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+        "score": 0.0,
+        "nickname": "\uc775\uba85"
+      }
+    ]
   },
   "kagoai": {
     "top_7_days": [
@@ -393,6 +405,12 @@
         "nickname": "\uc775\uba85"
       }
     ],
-    "top_all_time": []
+    "top_all_time": [
+      {
+        "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+        "score": 0.0,
+        "nickname": "\uc775\uba85"
+      }
+    ]
   }
 }
