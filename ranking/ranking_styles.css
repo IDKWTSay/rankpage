@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.banner {
+    height: 20vh;
+    background-image: url('ranking_banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    background: linear-gradient(to top, RGBa(227,120,138,0.4), rgba(253,218,162, 0.3));
+    overflow: hidden;
+}
+
+.main-section {
+    width: 55%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+.search-section {
+    width: 45%;
+    padding: 20px;
+    background-color: transparent;
+    border-left: 1px solid #ddd;
+}
+
+.corner-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 37vw;
+    height: 37vh;
+    object-fit: contain;
+	opacity: 0.3;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 200px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #52C000;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.85em;
+}
+
+th, td {
+    border: 1px solid rgba(200,67,77,0.6);
+    padding: 4px 6px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+th {
+    background-color: #EC7B9A;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.id-container {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.period-tables {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.period-container {
+    flex: 1;
+    min-width: 0;
+}
+
+#autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 30%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    display: none;
+}
+
+.autocomplete-item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #F47F88;
+}
+
+.autocomplete-item.selected {
+    background-color: #F47F88;
+}
