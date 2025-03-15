@@ -16,6 +16,17 @@ async function fetchRankingData() {
     }
 }
 
+const hoverStyle = document.createElement('style');
+hoverStyle.textContent = `
+    table td {
+        transition: background-color 0.2s;
+    }
+    
+    table td:hover {
+        background-color: #ADB3EB87;
+    }
+`;
+document.head.appendChild(hoverStyle);
 
 function createTables(id, streamerData, container) {
     const idContainer = document.createElement('div');
@@ -179,51 +190,33 @@ async function searchId() {
     }
 }
 
-
-function createNavigationButtons(section, position) {
-    const navButtonsDiv = document.createElement('div');
-    navButtonsDiv.className = `section-nav-buttons ${position}`;
-    
-    const buttons = [
-        { type: 'ascend', img: 'ascend.png' },
-        { type: 'descend', img: 'descend.png' }
-    ];
-
-    buttons.forEach(btn => {
-        const button = document.createElement('button');
-        const img = document.createElement('img');
-        img.src = btn.img;
-        img.alt = btn.type === 'ascend' ? 'Up' : 'Down';
-        img.width = 30;
-        img.height = 30;
-        button.appendChild(img);
-        
-        button.addEventListener('click', () => {
-            const scrollOptions = {
-                behavior: 'smooth',
-                block: btn.type === 'ascend' ? 'start' : 'end'
-            };
-            section.scrollIntoView(scrollOptions);
-        });
-        
-        navButtonsDiv.appendChild(button);
-    });
-
-    document.body.appendChild(navButtonsDiv);
-}
-
-
-
 document.addEventListener('DOMContentLoaded', async function() {
     rankingData = await fetchRankingData();
     if (rankingData) {
         const updatedTime = rankingData.updated;
         const banner = document.querySelector('.banner');
-        if (banner) {
-            banner.textContent = `갱신시간: ${updatedTime}`;
-			banner.style.fontSize = "20px";
-			banner.style.color = "black";
-        }
+    if (banner) {
+        const timeSpan = document.createElement('span');
+        timeSpan.textContent = `갱신시간: ${updatedTime}`;
+        timeSpan.style.display = "block";
+        timeSpan.style.marginTop = "120px";
+		timeSpan.style.marginLeft = "20px";
+        timeSpan.style.fontSize = "15px";
+        timeSpan.style.color = "blue";
+
+		const warningText = document.createElement('span');
+        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
+        warningText.style.display = "block";
+        warningText.style.marginTop = "70px";
+		warningText.style.marginLeft = "20px";
+        warningText.style.fontSize = "16px";
+        warningText.style.color = "red";
+		
+        banner.textContent = "";
+//		banner.appendChild(warningText);
+        banner.appendChild(timeSpan);
+		
+    }
         allStreamers = rankingData.streamers;
         allIds = Object.keys(allStreamers);
         allNicknames = allIds.map(id => allStreamers[id].nickname);
@@ -321,52 +314,69 @@ document.addEventListener('DOMContentLoaded', async function() {
   const mainSection = document.querySelector('.main-section');
   const searchSection = document.querySelector('.search-section');
   
-  // 각 섹션에 내비게이션 버튼 추가
-  createNavigationButtons(mainSection);
-  createNavigationButtons(searchSection);
+  addNavigationButtons(mainSection);
+  addNavigationButtons(searchSection);
 	
-  // 섹션에 내비게이션 버튼을 추가하는 함수
-//  function addNavigationButtons(section) {
-//    // 버튼 컨테이너 생성
-//    const navButtonsDiv = document.createElement('div');
-//    navButtonsDiv.className = 'section-nav-buttons';
-//    
-//    // 버튼 생성
-//    const ascendButton = document.createElement('button');
-//    ascendButton.className = 'ascend-button';
-//    const ascendImg = document.createElement('img');
-//    ascendImg.src = 'ascend.png';
-//    ascendImg.alt = 'Up';
-//    ascendButton.appendChild(ascendImg);
-//    
-//    const descendButton = document.createElement('button');
-//    descendButton.className = 'descend-button';
-//    const descendImg = document.createElement('img');
-//    descendImg.src = 'descend.png';
-//    descendImg.alt = 'Down';
-//    descendButton.appendChild(descendImg);
-//    
-//    navButtonsDiv.appendChild(ascendButton);
-//    navButtonsDiv.appendChild(descendButton);
-//    
-//    // 섹션에 상대적인 위치 설정을 위해 포지션 속성 추가
-//    if (window.getComputedStyle(section).position === 'static') {
-//      section.style.position = 'relative';
-//    }
-//    
-//    // 섹션에 버튼 컨테이너 추가
-//    section.appendChild(navButtonsDiv);
-//    
-//    // 위로 이동 버튼 클릭 이벤트 - 섹션의 맨 위로 스크롤
-//    ascendButton.addEventListener('click', function() {
-//      const sectionTop = section.offsetTop;
-//      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
-//    });
-//    
-//    // 아래로 이동 버튼 클릭 이벤트 - 섹션의 맨 아래로 스크롤
-//    descendButton.addEventListener('click', function() {
-//      const sectionBottom = section.offsetTop + section.offsetHeight;
-//      window.scrollTo({ top: sectionBottom - window.innerHeight, behavior: 'smooth' });
-//    });
-//  }
+  function addNavigationButtons(section) {
+    const navButtonsDiv = document.createElement('div');
+    navButtonsDiv.className = 'section-nav-buttons';
+    
+    const ascendButton = document.createElement('button');
+    ascendButton.className = 'ascend-button';
+    const ascendImg = document.createElement('img');
+    ascendImg.src = 'ascend.png';
+    ascendImg.alt = 'Up';
+    ascendButton.appendChild(ascendImg);
+    
+    const descendButton = document.createElement('button');
+    descendButton.className = 'descend-button';
+    const descendImg = document.createElement('img');
+    descendImg.src = 'descend.png';
+    descendImg.alt = 'Down';
+    descendButton.appendChild(descendImg);
+    
+    navButtonsDiv.appendChild(ascendButton);
+    navButtonsDiv.appendChild(descendButton);
+
+    document.body.appendChild(navButtonsDiv);
+
+    function updateButtonPosition() {
+        const rect = section.getBoundingClientRect();
+        const scrollTop = window.scrollY || window.pageYOffset;
+        
+        const rightOffset = 20;
+        const bottomOffset = 20;
+        const buttonHeight = navButtonsDiv.offsetHeight;
+        
+        navButtonsDiv.style.right = `${window.innerWidth - rect.right + rightOffset}px`;
+        navButtonsDiv.style.bottom = `${window.innerHeight - rect.bottom + bottomOffset}px`;
+        
+        if (rect.bottom < 0 || rect.top > window.innerHeight) {
+            navButtonsDiv.style.display = 'none';
+        } else {
+            navButtonsDiv.style.display = 'flex';
+        }
+    }
+    
+    ascendButton.addEventListener('click', function() {
+        section.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    descendButton.addEventListener('click', function() {
+        section.scrollTo({ top: section.scrollHeight - section.clientHeight, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', updateButtonPosition);
+    window.addEventListener('resize', updateButtonPosition);
+    section.addEventListener('scroll', updateButtonPosition);
+    updateButtonPosition();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mainSection = document.querySelector('.main-section');
+    const searchSection = document.querySelector('.search-section');
+    
+    addNavigationButtons(mainSection);
+    addNavigationButtons(searchSection);
+});
 });

@@ -69,6 +69,3 @@ document.querySelectorAll('.copy-link').forEach(link => {
 
   moveToSlide(0);
 })();
-
-
-

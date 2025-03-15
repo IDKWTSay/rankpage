@@ -17,6 +17,7 @@ body {
     background-image: url('ranking_banner.png');
     background-size: cover;
     background-position: center;
+	pointer-events: none;
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
     padding-left: 30px;
     overflow-y: auto;
     background-color: transparent;
+	position: relative;
 }
 
 .search-section {
@@ -39,6 +41,7 @@ body {
 	overflow-y: auto;
     background-color: transparent;
     border-left: 1px solid #ddd;
+	position: relative;
 }
 
 .corner-image {
@@ -49,6 +52,7 @@ body {
     height: 37vh;
     object-fit: contain;
 	opacity: 0.3;
+	pointer-events: none;
 }
 
 .search-bar {
@@ -103,6 +107,12 @@ th, td {
 .trophy-column {
     width: 15px;
     text-align: center;
+}
+
+.trophy-column img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .rank-column {
@@ -200,11 +210,10 @@ h3 {
 
 .section-nav-buttons {
 	position: fixed;
- 	bottom: 20px;
- 	right: 20px;
  	display: flex;
  	flex-direction: column;
  	z-index: 1000;
+	transition: all 0.1s ease;
 }
 
 .section-nav-buttons button {
@@ -212,13 +221,14 @@ h3 {
  	height: 35px;
  	padding: 0;
  	border: none;
- 	background-color: rgba(255, 255, 255, 0.8);
+ 	background-color: rgba(255, 235, 59, 0.3);
  	border-radius: 5px;
  	cursor: pointer;
  	display: flex;
  	justify-content: center;
  	align-items: center;
  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: background-color 0.2s ease;
 }
 
 .section-nav-buttons button:first-child {
@@ -231,7 +241,38 @@ h3 {
  	border-radius: 0 0 5px 5px;
 }
 
+.section-nav-buttons button:hover {
+    background-color: rgba(255, 215, 0, 0.8);
+}
+
+.section-nav-buttons button:active {
+    background-color: rgba(100, 200, 0, 1);
+}
+
 .section-nav-buttons img {
  	width: 20px;
  	height: 20px;
+}
+
+
+.main-section::-webkit-scrollbar,
+.search-section::-webkit-scrollbar {
+    width: 16px;
+}
+
+.main-section::-webkit-scrollbar-track,
+.search-section::-webkit-scrollbar-track {
+    background: rgba(255, 192, 203, 0.2);
+    border-radius: 10px;
+}
+
+.main-section::-webkit-scrollbar-thumb,
+.search-section::-webkit-scrollbar-thumb {
+    background: #DE668FFF;
+    border-radius: 10px;
+}
+
+.main-section::-webkit-scrollbar-thumb:hover,
+.search-section::-webkit-scrollbar-thumb:hover {
+    background: #DE2865FF;
 }
