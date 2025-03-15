@@ -95,35 +95,29 @@ th, td {
     text-overflow: ellipsis;
 }
 
-/* 1열(트로피)과 4열(변동)을 투명하게 하고 테두리 제거 */
 .trophy-column, .change-column {
     background-color: transparent !important;
     border: none !important;
 }
 
-/* 1열(트로피) 설정 */
 .trophy-column {
-    width: 15px; /* 트로피 열 너비 */
+    width: 15px;
     text-align: center;
 }
 
-/* 2열(등수) 설정 */
 .rank-column {
-    width: 40px; /* 등수 열 너비 */
-    text-align: center; /* 가운데 정렬 */
+    width: 40px;
+    text-align: center;
 }
 
-/* 3열(닉네임) 설정 - 남은 공간을 모두 차지 */
 th:nth-child(3), td:nth-child(3) {
     width: auto;
 }
 
-/* 4열(변동) 설정 */
 .change-column {
-    width: 25px; /* 변동 열 너비 */
+    width: 25px;
 }
 
-/* 가능한 모든 브라우저 호환성을 위한 추가 설정 */
 th:first-child, td:first-child {
     width: 15px !important;
 }
@@ -202,4 +196,42 @@ h3 {
 
 .autocomplete-item.selected {
     background-color: #F47F88;
+}
+
+.section-nav-buttons {
+	position: fixed;
+ 	bottom: 20px;
+ 	right: 20px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	z-index: 1000;
+}
+
+.section-nav-buttons button {
+ 	width: 35px;
+ 	height: 35px;
+ 	padding: 0;
+ 	border: none;
+ 	background-color: rgba(255, 255, 255, 0.8);
+ 	border-radius: 5px;
+ 	cursor: pointer;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section-nav-buttons button:first-child {
+ 	margin-bottom: 0;
+ 	border-bottom: 1px solid #ddd;
+ 	border-radius: 5px 5px 0 0;
+}
+
+.section-nav-buttons button:last-child {
+ 	border-radius: 0 0 5px 5px;
+}
+
+.section-nav-buttons img {
+ 	width: 20px;
+ 	height: 20px;
 }

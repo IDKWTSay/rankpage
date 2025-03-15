@@ -70,13 +70,12 @@ function createTables(id, streamerData, container) {
                 let trophyImage = 'bronze_trophy.webp';
                 if (index === 0) {
                     trophyImage = 'dia_trophy.webp';
-                } else if (index >= 1 && index <= 5) {
+                } else if (index >= 1 && index <= 4) {
                     trophyImage = 'golden_trophy.webp';
-                } else if (index >= 6 && index <= 10) {
+                } else if (index >= 5 && index <= 9) {
                     trophyImage = 'silver_trophy.webp';
                 }
                 
-                // Format rank change
                 let changeDisplay = '';
                 if (entry.rank_change === 'new') {
                     changeDisplay = '<span style="color:red;">new</span>';
@@ -92,7 +91,7 @@ function createTables(id, streamerData, container) {
                 
                 row.innerHTML = `
                     <td class="trophy-column">
-                        <img src="${trophyImage}" width="13" height="20" alt="trophy">
+                        <img src="${trophyImage}" width="16" height="21" alt="trophy">
                     </td>
                     <td class="rank-column">${index + 1}</td>
                     <td>
@@ -108,11 +107,11 @@ function createTables(id, streamerData, container) {
             tbody.appendChild(row);
         }
         
+		periodContainer.style.zIndex = "100"
         table.appendChild(tbody);
-        periodContainer.appendChild(table);
+        periodContainer.appendChild(table)
         periodTablesContainer.appendChild(periodContainer);
     });
-    
     idContainer.appendChild(periodTablesContainer);
     container.appendChild(idContainer);
 }
@@ -180,8 +179,42 @@ async function searchId() {
     }
 }
 
+
+function createNavigationButtons(section, position) {
+    const navButtonsDiv = document.createElement('div');
+    navButtonsDiv.className = `section-nav-buttons ${position}`;
+    
+    const buttons = [
+        { type: 'ascend', img: 'ascend.png' },
+        { type: 'descend', img: 'descend.png' }
+    ];
+
+    buttons.forEach(btn => {
+        const button = document.createElement('button');
+        const img = document.createElement('img');
+        img.src = btn.img;
+        img.alt = btn.type === 'ascend' ? 'Up' : 'Down';
+        img.width = 30;
+        img.height = 30;
+        button.appendChild(img);
+        
+        button.addEventListener('click', () => {
+            const scrollOptions = {
+                behavior: 'smooth',
+                block: btn.type === 'ascend' ? 'start' : 'end'
+            };
+            section.scrollIntoView(scrollOptions);
+        });
+        
+        navButtonsDiv.appendChild(button);
+    });
+
+    document.body.appendChild(navButtonsDiv);
+}
+
+
+
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log("페이지 로드됨");
     rankingData = await fetchRankingData();
     if (rankingData) {
         const updatedTime = rankingData.updated;
@@ -281,4 +314,59 @@ document.addEventListener('DOMContentLoaded', async function() {
             autocompleteDropdown.style.display = 'none';
         }, 200);
     });
+	
+	
+	
+	
+  const mainSection = document.querySelector('.main-section');
+  const searchSection = document.querySelector('.search-section');
+  
+  // 각 섹션에 내비게이션 버튼 추가
+  createNavigationButtons(mainSection);
+  createNavigationButtons(searchSection);
+	
+  // 섹션에 내비게이션 버튼을 추가하는 함수
+//  function addNavigationButtons(section) {
+//    // 버튼 컨테이너 생성
+//    const navButtonsDiv = document.createElement('div');
+//    navButtonsDiv.className = 'section-nav-buttons';
+//    
+//    // 버튼 생성
+//    const ascendButton = document.createElement('button');
+//    ascendButton.className = 'ascend-button';
+//    const ascendImg = document.createElement('img');
+//    ascendImg.src = 'ascend.png';
+//    ascendImg.alt = 'Up';
+//    ascendButton.appendChild(ascendImg);
+//    
+//    const descendButton = document.createElement('button');
+//    descendButton.className = 'descend-button';
+//    const descendImg = document.createElement('img');
+//    descendImg.src = 'descend.png';
+//    descendImg.alt = 'Down';
+//    descendButton.appendChild(descendImg);
+//    
+//    navButtonsDiv.appendChild(ascendButton);
+//    navButtonsDiv.appendChild(descendButton);
+//    
+//    // 섹션에 상대적인 위치 설정을 위해 포지션 속성 추가
+//    if (window.getComputedStyle(section).position === 'static') {
+//      section.style.position = 'relative';
+//    }
+//    
+//    // 섹션에 버튼 컨테이너 추가
+//    section.appendChild(navButtonsDiv);
+//    
+//    // 위로 이동 버튼 클릭 이벤트 - 섹션의 맨 위로 스크롤
+//    ascendButton.addEventListener('click', function() {
+//      const sectionTop = section.offsetTop;
+//      window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+//    });
+//    
+//    // 아래로 이동 버튼 클릭 이벤트 - 섹션의 맨 아래로 스크롤
+//    descendButton.addEventListener('click', function() {
+//      const sectionBottom = section.offsetTop + section.offsetHeight;
+//      window.scrollTo({ top: sectionBottom - window.innerHeight, behavior: 'smooth' });
+//    });
+//  }
 });
