@@ -1,5 +1,7 @@
 let rankingData = null;
+let allStreamers = null;
 let allIds = [];
+let allNicknames = [];
 
 async function fetchRankingData() {
     try {
@@ -10,35 +12,37 @@ async function fetchRankingData() {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('JSON 데이터 불러오기 오류:', error);
         return null;
     }
 }
 
-function createTables(id, data, container) {
+
+function createTables(id, streamerData, container) {
     const idContainer = document.createElement('div');
     idContainer.className = 'id-container';
     
     const h2 = document.createElement('h2');
-    h2.textContent = `ID: ${id}`;
+    h2.innerHTML = `
+        <img src="${streamerData.thumbnail}" alt="${streamerData.nickname}" style="width:50px;height:50px;margin-right:10px;vertical-align:middle;border-radius: 50%;">
+        <span>${streamerData.nickname}</span>
+    `;
     idContainer.appendChild(h2);
-
     const periodTablesContainer = document.createElement('div');
     periodTablesContainer.className = 'period-tables';
     
     const periods = ['top_7_days', 'top_30_days', 'top_all_time'];
     const periodNames = {
-        'top_7_days': '7 days',
-        'top_30_days': '30 days',
-        'top_all_time': 'All time'
+        'top_7_days': '7일 랭킹',
+        'top_30_days': '30일 랭킹',
+        'top_all_time': '전체시간'
     };
     
     periods.forEach(period => {
         const periodContainer = document.createElement('div');
         periodContainer.className = 'period-container';
-        
         const periodTitle = document.createElement('h3');
         periodTitle.textContent = periodNames[period];
+		periodTitle.style.marginLeft = "30px";
         periodContainer.appendChild(periodTitle);
         
         const table = document.createElement('table');
@@ -47,30 +51,60 @@ function createTables(id, data, container) {
         
         thead.innerHTML = `
             <tr>
-                <th>등수</th>
+                <th class="trophy-column"></th>
+                <th class="rank-column">등수</th>
                 <th>닉네임</th>
-                <th>Score</th>
+                <th class="change-column"></th>
             </tr>
         `;
         
         table.appendChild(thead);
         
-        if (data[period] && data[period].length > 0) {
-            const sortedData = [...data[period]].sort((a, b) => b.score - a.score);
+        if (streamerData[period] && streamerData[period].length > 0) {
+            const sortedData = [...streamerData[period]].sort((a, b) => b.score - a.score);
             const topEntries = sortedData.slice(0, 30);
             
             topEntries.forEach((entry, index) => {
                 const row = document.createElement('tr');
+                
+                let trophyImage = 'bronze_trophy.webp';
+                if (index === 0) {
+                    trophyImage = 'dia_trophy.webp';
+                } else if (index >= 1 && index <= 5) {
+                    trophyImage = 'golden_trophy.webp';
+                } else if (index >= 6 && index <= 10) {
+                    trophyImage = 'silver_trophy.webp';
+                }
+                
+                // Format rank change
+                let changeDisplay = '';
+                if (entry.rank_change === 'new') {
+                    changeDisplay = '<span style="color:red;">new</span>';
+                } else if (entry.rank_change.startsWith('+')) {
+                    const value = entry.rank_change.substring(1);
+                    changeDisplay = `<img src="up.png" width="10" height="10" alt="up"> ${value}`;
+                } else if (entry.rank_change.startsWith('-')) {
+                    const value = entry.rank_change.substring(1);
+                    changeDisplay = `<img src="down.png" width="10" height="10" alt="down"> ${value}`;
+                } else if (entry.rank_change === '0') {
+                    changeDisplay = '-';
+                }
+                
                 row.innerHTML = `
-                    <td>${index + 1}</td>
-                    <td title="${entry.nickname}">${entry.nickname}</td>
-                    <td>${entry.score}</td>
+                    <td class="trophy-column">
+                        <img src="${trophyImage}" width="13" height="20" alt="trophy">
+                    </td>
+                    <td class="rank-column">${index + 1}</td>
+                    <td>
+                        <span title="${entry.nickname}">${entry.nickname}</span>
+                    </td>
+                    <td class="change-column">${changeDisplay}</td>
                 `;
                 tbody.appendChild(row);
             });
         } else {
             const row = document.createElement('tr');
-            row.innerHTML = `<td colspan="3">No data available</td>`;
+            row.innerHTML = `<td colspan="4">No data available</td>`;
             tbody.appendChild(row);
         }
         
@@ -82,6 +116,7 @@ function createTables(id, data, container) {
     idContainer.appendChild(periodTablesContainer);
     container.appendChild(idContainer);
 }
+
 
 async function loadInitialTables() {
     if (!rankingData) {
@@ -95,26 +130,23 @@ async function loadInitialTables() {
     }
     container.innerHTML = '';
     const fixedIds = [
-        '243000', 'cotton1217', 'ecvhao', 'jingburger1', 
-        'inehine', 'gosegu2', 'lilpa0309'
+        'ecvhao', 'inehine', 'jingburger1', 'lilpa0309', 'cotton1217',  'gosegu2', 'viichan6'
     ];
     let tablesCreated = 0;
     
     for (const id of fixedIds) {
-        if (rankingData[id]) {
-            createTables(id, rankingData[id], container);
+        if (allStreamers[id]) {
+            createTables(id, allStreamers[id], container);
             tablesCreated++;
         } else {
-            console.warn(`ID '${id}'에 대한 데이터가 없습니다.`);
             const errorMsg = document.createElement('div');
             errorMsg.innerHTML = `<p>ID '${id}'에 대한 데이터를 찾을 수 없습니다.</p>`;
             container.appendChild(errorMsg);
         }
     }
     
-    console.log(`${tablesCreated}개의 테이블이 생성되었습니다.`);
     if (tablesCreated === 0) {
-        container.innerHTML = '<p>표시할 데이터가 없습니다. JSON 파일을 확인해주세요.</p>';
+        container.innerHTML = '<p>표시할 데이터가 없습니다.</p>';
     }
 }
 
@@ -124,7 +156,7 @@ async function searchId() {
     resultContainer.innerHTML = '';
     
     if (!input) {
-        resultContainer.textContent = 'ID를 입력해주세요.';
+        resultContainer.textContent = 'ID 또는 닉네임을 입력해주세요.';
         return;
     }
     
@@ -133,19 +165,35 @@ async function searchId() {
         return;
     }
     
-    if (!rankingData[input]) {
-        resultContainer.textContent = '해당 ID를 찾을 수 없습니다.';
-        return;
+    let found = false;
+    for (const id in allStreamers) {
+        const streamer = allStreamers[id];
+        if (id === input || streamer.nickname === input) {
+            createTables(id, streamer, resultContainer);
+            found = true;
+            break;
+        }
     }
     
-    createTables(input, rankingData[input], resultContainer);
+    if (!found) {
+        resultContainer.textContent = '해당 ID 또는 닉네임을 찾을 수 없습니다.';
+    }
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
     console.log("페이지 로드됨");
     rankingData = await fetchRankingData();
     if (rankingData) {
-        allIds = Object.keys(rankingData);
+        const updatedTime = rankingData.updated;
+        const banner = document.querySelector('.banner');
+        if (banner) {
+            banner.textContent = `갱신시간: ${updatedTime}`;
+			banner.style.fontSize = "20px";
+			banner.style.color = "black";
+        }
+        allStreamers = rankingData.streamers;
+        allIds = Object.keys(allStreamers);
+        allNicknames = allIds.map(id => allStreamers[id].nickname);
         loadInitialTables();
     } else {
         console.error("데이터를 불러오지 못했습니다.");
@@ -163,7 +211,16 @@ document.addEventListener('DOMContentLoaded', async function() {
             return;
         }
         
-        const suggestions = allIds.filter(id => id.toLowerCase().startsWith(query));
+        let suggestions = [];
+        
+        const idSuggestions = allIds.filter(id => id.toLowerCase().startsWith(query));
+        suggestions = suggestions.concat(idSuggestions.map(id => ({ type: 'id', value: id })));
+        
+        const nicknameSuggestions = allNicknames.filter(nickname => nickname.toLowerCase().startsWith(query));
+        suggestions = suggestions.concat(nicknameSuggestions.map(nickname => ({ type: 'nickname', value: nickname })));
+        
+        suggestions = [...new Set(suggestions.map(s => JSON.stringify(s)))].map(s => JSON.parse(s)).slice(0, 10);
+        
         if (suggestions.length === 0) {
             autocompleteDropdown.innerHTML = '';
             autocompleteDropdown.style.display = 'none';
@@ -171,13 +228,13 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
         
         autocompleteDropdown.innerHTML = '';
-        suggestions.forEach((id, index) => {
+        suggestions.forEach((suggestion, index) => {
             const item = document.createElement('div');
             item.className = 'autocomplete-item';
             if (index === 0) item.classList.add('selected');
-            item.textContent = id;
+            item.textContent = suggestion.type === 'id' ? `(id)${suggestion.value}` : `${suggestion.value}`;
             item.addEventListener('click', function() {
-                searchInput.value = id;
+                searchInput.value = suggestion.value;
                 autocompleteDropdown.style.display = 'none';
                 searchId();
             });
@@ -212,7 +269,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         } else if (e.key === 'Enter') {
             if (selectedIndex >= 0) {
                 e.preventDefault();
-                searchInput.value = items[selectedIndex].textContent;
+                searchInput.value = items[selectedIndex].textContent.split(' ')[0];
                 autocompleteDropdown.style.display = 'none';
                 searchId();
             }

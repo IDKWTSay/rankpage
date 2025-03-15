@@ -1,1217 +1,1429 @@
 {
-  "243000": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "alsdudtjdud1": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 2900.0
-      }
-    ]
-  },
-  "bambe53": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": []
-  },
-  "cotton1217": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "ecvhao": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "gosegu2": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "inehine": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "jingburger1": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "ju010228": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": []
-  },
-  "kagoai": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_30_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "lilpa0309": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "lina0108": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "mawang0216": {
-    "top_7_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ],
-    "top_30_days": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 87200.0
-      }
-    ],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1298700.0
-      }
-    ]
-  },
-  "rmlrl771": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "spbabobj": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "viichan6": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": [
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 131500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da63-4fb1-b0be-b31e8196eb3f",
-        "score": 13100.0,
-        "nickname": "가나다2"
-      },
-      {
-        "uid": "ae9d2e5f-da63-4fb1-b0be-b31e8c96eb3f",
-        "score": 1310.0,
-        "nickname": "가나다3"
-      },
-      {
-        "uid": "ae9d2e2f-da83-4fb1-b0be-b31e8c96eb3f",
-        "score": 13500.0,
-        "nickname": "간바이"
-      },
-      {
-        "uid": "ae9d2e2f-da69-4fb1-b0be-b31e8c96eb3f",
-        "score": 13150.0,
-        "nickname": "가조쿠"
-      },
-      {
-        "uid": "ae9d2e2f-da53-4fb1-b0be-b31e8c96eb3f",
-        "score": 31500.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da23-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가시나"
-      },
-      {
-        "uid": "ae9d2e2f-da13-4fb1-b0be-b31e8c96eb3f",
-        "score": 1300.0,
-        "nickname": "가나다"
-      },
-      {
-        "uid": "ae9d2e2f-da93-4fb1-b0be-b31e8c96eb3f",
-        "score": 145500.0,
-        "nickname": "가라다"
-      },
-      {
-        "uid": "ae9d2e2f-da73-4fb1-b0be-b31e8c96eb3f",
-        "score": 61500.0,
-        "nickname": "가나다"
-      }
-    ]
-  },
-  "wjdfogur98": {
-    "top_7_days": [],
-    "top_30_days": [],
-    "top_all_time": []
+  "updated": "2025-03-15 16:25",
+  "streamers": {
+    "243000": {
+      "nickname": "\ucc9c\uc591",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/24/243000/243000.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "new"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85\uc775\uba85",
+          "rank_change": "-3"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 5400.0,
+          "nickname": "test_01",
+          "rank_change": "+1"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        }
+      ]
+    },
+    "95962000": {
+      "nickname": "\ubcc4\ub098\ubb34.",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/95/95962000/95962000.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 1200.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "alsdudtjdud1": {
+      "nickname": "\uae40\ucc60\uba5c",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/al/alsdudtjdud1/alsdudtjdud1.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 2900.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 2900.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "bambe53": {
+      "nickname": "\ubc24\ubca0",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ba/bambe53/bambe53.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "cotton1217": {
+      "nickname": "\uc8fc\ub974\ub974",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/co/cotton1217/cotton1217.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 354140.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 354140.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 29322100.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 28781948.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "dks336": {
+      "nickname": "\ube44\uc988\ub2c8\uc2a4\ud0b4-",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/dk/dks336/dks336.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "ecvhao": {
+      "nickname": "\uc6b0\uc641\uad73",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ec/ecvhao/ecvhao.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 136800.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 136800.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 9246330.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 9039930.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "gosegu2": {
+      "nickname": "\uace0\uc138\uad6c!",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/go/gosegu2/gosegu2.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 44400.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 44400.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 120900.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 76500.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "inehine": {
+      "nickname": "\uc544\uc774\ub124\u266a",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/in/inehine/inehine.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 3600.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 3600.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 123500.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 119900.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "jingburger1": {
+      "nickname": "\uc9d5\ubc84\uac70\u2606",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ji/jingburger1/jingburger1.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 403840.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 399640.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "ju010228": {
+      "nickname": "\uc96c\uba69\uc774",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ju/ju010228/ju010228.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "kagoai": {
+      "nickname": "\ub274\uc2a4",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ka/kagoai/kagoai.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 3400.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 3400.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "lilpa0309": {
+      "nickname": "\ub9b4\ud30c\u266c",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/li/lilpa0309/lilpa0309.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 114200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 114200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 414100.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 299900.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "lina0108": {
+      "nickname": "\uc720\uc2dc\ub178_\ub9ac\ub0d0",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/li/lina0108/lina0108.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 300.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 300.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "mawang0216": {
+      "nickname": "\ub9c8\uc6550216",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ma/mawang0216/mawang0216.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 28200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 28200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 69200.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 41000.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "rmlrl771": {
+      "nickname": "\ub060\ub07c",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/rm/rmlrl771/rmlrl771.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 300.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 300.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "spbabobj": {
+      "nickname": "\uba38\ub3c5",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/sp/spbabobj/spbabobj.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 600.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 600.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "viichan6": {
+      "nickname": "\ube44\ucc64",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/vi/viichan6/viichan6.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1000.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1000.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 301900.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        },
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 300900.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "wjdfogur98": {
+      "nickname": "\ub300\uc6d4\ud5a5",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/wj/wjdfogur98/wjdfogur98.jpg",
+      "top_7_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "9292d230-2f81-4bdd-b03c-c90d29102ca1",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    },
+    "xoals137": {
+      "nickname": "\ud074\ub9ac\ub4dc1",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/xo/xoals137/xoals137.jpg",
+      "top_7_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 0.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "c12082a9-f7ea-4876-a7e2-ff338e792f59",
+          "score": 1000.0,
+          "nickname": "test_01",
+          "rank_change": "0"
+        }
+      ]
+    }
   }
 }
