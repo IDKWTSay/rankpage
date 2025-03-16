@@ -199,21 +199,22 @@ document.addEventListener('DOMContentLoaded', async function() {
         const timeSpan = document.createElement('span');
         timeSpan.textContent = `갱신시간: ${updatedTime}`;
         timeSpan.style.display = "block";
-        timeSpan.style.marginTop = "120px";
+        timeSpan.style.marginTop = "20px";
 		timeSpan.style.marginLeft = "20px";
         timeSpan.style.fontSize = "15px";
         timeSpan.style.color = "blue";
 
 		const warningText = document.createElement('span');
-        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
+//        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
+		warningText.textContent = "닉네임 설정은 팝업창 세부설정탭에서 하실 수 있습니다.";
         warningText.style.display = "block";
-        warningText.style.marginTop = "70px";
+        warningText.style.marginTop = "80px";
 		warningText.style.marginLeft = "20px";
         warningText.style.fontSize = "16px";
-        warningText.style.color = "red";
+        warningText.style.color = "purple";
 		
         banner.textContent = "";
-//		banner.appendChild(warningText);
+		banner.appendChild(warningText);
         banner.appendChild(timeSpan);
 		
     }
