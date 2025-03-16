@@ -156,7 +156,7 @@ async function loadInitialTables() {
     }
     
     if (tablesCreated === 0) {
-        container.innerHTML = '<p>표시할 데이터가 없습니다.</p>';
+        container.innerHTML = '<p>이제 막 열렸습니다. 몇시간 후에 찾아와주세요!</p>';
     }
 }
 
