@@ -1,5 +1,5 @@
 {
-  "updated": "2025-03-16 16:53",
+  "updated": "2025-03-16 17:07",
   "streamers": {
     "mygomiee": {
       "nickname": "\ub9c8\uc774\uacf0\uc774_",
@@ -22,6 +22,13 @@
       "top_30_days": [],
       "top_all_time": []
     },
+    "gosummer": {
+      "nickname": "\uace0\uc5ec\ub984_",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/go/gosummer/gosummer.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
     "243000": {
       "nickname": "\ucc9c\uc591",
       "thumbnail": "//profile.img.sooplive.co.kr/LOGO/24/243000/243000.jpg",
@@ -39,6 +46,13 @@
     "hinqocorv": {
       "nickname": "\ud78c\ucf55",
       "thumbnail": "//profile.img.sooplive.co.kr/LOGO/hi/hinqocorv/hinqocorv.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "kagoai": {
+      "nickname": "\ub274\uc2a4",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ka/kagoai/kagoai.jpg",
       "top_7_days": [],
       "top_30_days": [],
       "top_all_time": []
