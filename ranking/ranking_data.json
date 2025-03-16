@@ -1,4 +1,54 @@
 {
-  "updated": "2025-03-15 16:25",
-  "streamers": {}
+  "updated": "2025-03-16 16:53",
+  "streamers": {
+    "mygomiee": {
+      "nickname": "\ub9c8\uc774\uacf0\uc774_",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/my/mygomiee/mygomiee.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "lshooooo": {
+      "nickname": "\uc774\uc0c1\ud638",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ls/lshooooo/lshooooo.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "smpk96": {
+      "nickname": "\u25b6\ubc15\uc090\uc090",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/sm/smpk96/smpk96.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "243000": {
+      "nickname": "\ucc9c\uc591",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/24/243000/243000.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "dlsn9911": {
+      "nickname": "\uc81c\uac08\uae08\uc790",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/dl/dlsn9911/dlsn9911.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "hinqocorv": {
+      "nickname": "\ud78c\ucf55",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/hi/hinqocorv/hinqocorv.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    },
+    "fhwm0602": {
+      "nickname": "\ubbf8\ub85c\u3002",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/fh/fhwm0602/fhwm0602.jpg",
+      "top_7_days": [],
+      "top_30_days": [],
+      "top_all_time": []
+    }
+  }
 }
