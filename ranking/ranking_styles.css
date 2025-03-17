@@ -25,23 +25,25 @@ body {
     display: flex;
     background: linear-gradient(to top, RGBa(227,120,138,0.4), rgba(253,218,162, 0.3));
     overflow: hidden;
+	transition: all 0.3s ease;
 }
 
 .main-section {
     width: 55%;
-    padding-left: 30px;
+    padding-left: 1.5vw;
     overflow-y: auto;
     background-color: transparent;
 	position: relative;
+	transition: width 0.3s ease;
 }
 
 .search-section {
     width: 45%;
-    padding: 20px;
+    padding: 1.2vw;
 	overflow-y: auto;
     background-color: transparent;
-    border-left: 1px solid #ddd;
 	position: relative;
+	transition: width 0.3s ease;
 }
 
 .corner-image {
@@ -61,9 +63,9 @@ body {
 }
 
 .search-bar input {
-    padding: 8px;
-    width: 200px;
-    margin-right: 5px;
+    padding: 0.4vw;
+    width: 13vw;
+    margin-right: 0.5vw;
 }
 
 .search-bar button {
@@ -86,7 +88,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 20px;
     font-size: 0.85em;
-    width: 95%;
+    width: 93%;
     table-layout: fixed;
 }
 
@@ -217,11 +219,11 @@ h3 {
 }
 
 .section-nav-buttons button {
- 	width: 35px;
- 	height: 35px;
+ 	width: 2vw;
+ 	height: 4vh;
  	padding: 0;
  	border: none;
- 	background-color: rgba(255, 235, 59, 0.3);
+ 	background-color: rgba(255, 235, 59, 0.2);
  	border-radius: 5px;
  	cursor: pointer;
  	display: flex;
@@ -243,21 +245,24 @@ h3 {
 
 .section-nav-buttons button:hover {
     background-color: rgba(255, 215, 0, 0.8);
+	opacity: 1;
 }
 
 .section-nav-buttons button:active {
     background-color: rgba(100, 200, 0, 1);
+	opacity: 1;
 }
 
 .section-nav-buttons img {
- 	width: 20px;
- 	height: 20px;
+ 	width: 1.1vw;
+ 	height: 2vh;
+	opacity: 0.7;
 }
 
 
 .main-section::-webkit-scrollbar,
 .search-section::-webkit-scrollbar {
-    width: 16px;
+    width: 1.5vh;
 }
 
 .main-section::-webkit-scrollbar-track,
@@ -276,3 +281,31 @@ h3 {
 .search-section::-webkit-scrollbar-thumb:hover {
     background: #DE2865FF;
 }
+
+.streamer-banners {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    padding: 1vw;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.streamer-banner-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+/*    border: 3px solid transparent;*/
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+

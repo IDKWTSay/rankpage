@@ -127,23 +127,113 @@ function createTables(id, streamerData, container) {
     container.appendChild(idContainer);
 }
 
+function addStreamerBanners() {
+    const fixedIds = [
+        'ecvhao', 'inehine', 'jingburger1', 'lilpa0309', 'cotton1217', 'gosegu2', 'viichan6'
+    ];
+
+    const bannerContainer = document.createElement('div');
+    bannerContainer.className = 'streamer-banners';
+    bannerContainer.style.position = 'fixed';
+    bannerContainer.style.top = '13.3vh';
+    bannerContainer.style.left = '15vw';
+    bannerContainer.style.width = '35vw';
+    bannerContainer.style.display = 'flex';
+    bannerContainer.style.justifyContent = 'center';
+    bannerContainer.style.gap = '15px';
+    bannerContainer.style.zIndex = '1000';
+
+    for (const id of fixedIds) {
+        if (allStreamers[id]) {
+            const streamer = allStreamers[id];
+            
+            const bannerImg = document.createElement('div');
+            bannerImg.className = 'streamer-banner-img';
+            bannerImg.style.width = '60px';
+            bannerImg.style.height = '60px';
+            bannerImg.style.borderRadius = '50%';
+            bannerImg.style.overflow = 'hidden';
+            bannerImg.style.cursor = 'pointer';
+            bannerImg.style.transition = 'all 0.3s ease';
+            bannerImg.style.opacity = '0.8';
+            bannerImg.style.border = '3px solid transparent';
+            bannerImg.style.boxSizing = 'border-box';
+            
+            const img = document.createElement('img');
+            img.src = streamer.thumbnail;
+            img.alt = streamer.nickname;
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            
+            bannerImg.appendChild(img);
+            
+            bannerImg.addEventListener('mouseover', function() {
+                this.style.opacity = '1';
+                this.style.transform = 'scale(1.05)';
+				bannerImg.style.border = '';
+            });
+            
+            bannerImg.addEventListener('mouseout', function() {
+                this.style.opacity = '0.7';
+                this.style.transform = 'scale(1)';
+				bannerImg.style.border = '3px solid transparent';
+            });
+            
+            bannerImg.addEventListener('click', function() {
+				bannerImg.style.border = '';
+                this.style.boxShadow = '0 0 5px 3px #2ecc71';    
+                const targetElement = document.querySelector(`#tables-container div.id-container h2 img[alt="${streamer.nickname}"]`);
+                if (targetElement) {
+					const mainSection = document.querySelector('.main-section');
+					
+					const rectTop = targetElement.getBoundingClientRect().top;
+					const yOffset = -(window.innerHeight * 0.21);
+					const targetPosition = targetElement.getBoundingClientRect().top + mainSection.scrollTop + yOffset;
+
+                    mainSection.scrollTo({
+						top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                setTimeout(() => {
+					this.style.boxShadow = '';
+//                    bannerImg.style.border = '3px solid transparent';
+                }, 300);
+            });
+            
+            bannerContainer.appendChild(bannerImg);
+        }
+    }
+    
+    const mainSection = document.querySelector('.main-section');
+    if (mainSection) {
+        mainSection.insertBefore(bannerContainer, mainSection.firstChild);
+    } else {
+        document.body.insertBefore(bannerContainer, document.body.firstChild);
+    }
+}
+
 
 async function loadInitialTables() {
+	const container = document.getElementById('tables-container');
+	const fixedIds = [
+        'ecvhao', 'inehine', 'jingburger1', 'lilpa0309', 'cotton1217',  'gosegu2', 'viichan6'
+    ];
+	let tablesCreated = 0
+	
     if (!rankingData) {
         console.error("데이터가 아직 로드되지 않았습니다.");
         return;
     }
-    const container = document.getElementById('tables-container');
+    
     if (!container) {
         console.error("tables-container 요소를 찾을 수 없습니다.");
         return;
     }
     container.innerHTML = '';
-    const fixedIds = [
-        'ecvhao', 'inehine', 'jingburger1', 'lilpa0309', 'cotton1217',  'gosegu2', 'viichan6'
-    ];
-    let tablesCreated = 0;
-    
+
     for (const id of fixedIds) {
         if (allStreamers[id]) {
             createTables(id, allStreamers[id], container);
@@ -158,6 +248,7 @@ async function loadInitialTables() {
     if (tablesCreated === 0) {
         container.innerHTML = '<p>이제 막 열렸습니다. 몇시간 후에 찾아와주세요!</p>';
     }
+	addStreamerBanners();
 }
 
 async function searchId() {
@@ -188,9 +279,16 @@ async function searchId() {
     if (!found) {
         resultContainer.textContent = '해당 ID 또는 닉네임을 찾을 수 없습니다.';
     }
+	addStreamerBanners();
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
+	const mainSection = document.querySelector('.main-section');
+	const searchSection = document.querySelector('.search-section');
+	const container = document.querySelector('.container');
+	const searchInput = document.getElementById('search-input');
+    const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
+	
     rankingData = await fetchRankingData();
     if (rankingData) {
         const updatedTime = rankingData.updated;
@@ -199,8 +297,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         const timeSpan = document.createElement('span');
         timeSpan.textContent = `갱신시간: ${updatedTime}`;
         timeSpan.style.display = "block";
-        timeSpan.style.marginTop = "20px";
-		timeSpan.style.marginLeft = "20px";
+        timeSpan.style.marginTop = "2vh";
+		timeSpan.style.marginLeft = "1.5vw";
         timeSpan.style.fontSize = "15px";
         timeSpan.style.color = "blue";
 
@@ -208,8 +306,8 @@ document.addEventListener('DOMContentLoaded', async function() {
 //        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
 		warningText.textContent = "닉네임 설정은 팝업창 세부설정탭에서 하실 수 있습니다.";
         warningText.style.display = "block";
-        warningText.style.marginTop = "80px";
-		warningText.style.marginLeft = "20px";
+        warningText.style.marginTop = "8vh";
+		warningText.style.marginLeft = "1.5vw";
         warningText.style.fontSize = "16px";
         warningText.style.color = "purple";
 		
@@ -226,9 +324,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         console.error("데이터를 불러오지 못했습니다.");
         document.getElementById('tables-container').innerHTML = '<p>데이터를 불러오는 데 실패했습니다. 네트워크 연결을 확인해주세요.</p>';
     }
-    
-    const searchInput = document.getElementById('search-input');
-    const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
     
     searchInput.addEventListener('input', function() {
         const query = this.value.trim().toLowerCase();
@@ -308,16 +403,24 @@ document.addEventListener('DOMContentLoaded', async function() {
             autocompleteDropdown.style.display = 'none';
         }, 200);
     });
-	
-	
-	
-	
-  const mainSection = document.querySelector('.main-section');
-  const searchSection = document.querySelector('.search-section');
-  
-  addNavigationButtons(mainSection);
+
   addNavigationButtons(searchSection);
-	
+    mainSection.addEventListener('mouseenter', () => {
+        mainSection.style.width = '60%';
+        searchSection.style.width = '40%';
+    });
+
+    searchSection.addEventListener('mouseenter', () => {
+        mainSection.style.width = '50%';
+        searchSection.style.width = '50%';
+    });
+
+    container.addEventListener('mouseleave', () => {
+        mainSection.style.width = '55%';
+        searchSection.style.width = '45%';
+    });
+
+
   function addNavigationButtons(section) {
     const navButtonsDiv = document.createElement('div');
     navButtonsDiv.className = 'section-nav-buttons';
@@ -345,8 +448,8 @@ document.addEventListener('DOMContentLoaded', async function() {
         const rect = section.getBoundingClientRect();
         const scrollTop = window.scrollY || window.pageYOffset;
         
-        const rightOffset = 20;
-        const bottomOffset = 20;
+        const rightOffset = 25;
+        const bottomOffset = 25;
         const buttonHeight = navButtonsDiv.offsetHeight;
         
         navButtonsDiv.style.right = `${window.innerWidth - rect.right + rightOffset}px`;
@@ -372,12 +475,4 @@ document.addEventListener('DOMContentLoaded', async function() {
     section.addEventListener('scroll', updateButtonPosition);
     updateButtonPosition();
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    const mainSection = document.querySelector('.main-section');
-    const searchSection = document.querySelector('.search-section');
-    
-    addNavigationButtons(mainSection);
-    addNavigationButtons(searchSection);
-});
 });
