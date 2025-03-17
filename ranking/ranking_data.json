@@ -1,5 +1,5 @@
 {
-  "updated": "2025-03-17 12:15",
+  "updated": "2025-03-17 13:15",
   "streamers": {
     "ecvhao": {
       "nickname": "\uc6b0\uc641\uad73",
@@ -228,64 +228,70 @@
           "rank_change": "0"
         },
         {
+          "uid": "bbbb5f34-8bbb-41c0-a049-8c4fb9f5558e",
+          "score": 11160.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
           "uid": "fd56912b-38a4-4f33-a9f9-b0950ef0bea5",
           "score": 11120.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "e9d4cf68-4780-4b6e-a48b-84fdd90d5194",
           "score": 11056.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "a7260b0c-7cef-4776-82eb-3616e8c800ba",
           "score": 10800.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "90e2513c-1f1e-444b-b71d-4e1a976319e9",
           "score": 10752.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "97102dd3-3866-48e4-a7c2-1d52c86527e5",
           "score": 10720.0,
           "nickname": "\uc6b0\uc641\uad73\uc308\uc9d3\ub3c8\uac15\ud0c8\uc790\uace0\uc138\uad6c",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "02a30333-4e64-4b1c-8831-81cfca71544c",
           "score": 10400.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "9b4fdfaa-d773-491c-a372-b836ee002bb9",
           "score": 10260.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "47207c8f-142d-481f-8193-18ece77b9eba",
           "score": 10238.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
           "score": 10080.0,
           "nickname": "\ubc29\ud328",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
           "score": 9840.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "+1"
+          "nickname": "\ud788\uc789\uc774",
+          "rank_change": "-1"
         },
         {
           "uid": "4e268bcf-8598-48e6-88f2-96337a309da1",
@@ -297,13 +303,7 @@
           "uid": "ad68ba54-b19c-4bf3-938a-d14508bdae86",
           "score": 9520.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "89ed6f6f-60c3-44ca-8a19-ff93ecdf3742",
-          "score": 9287.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         }
       ],
       "top_30_days": [
@@ -530,64 +530,70 @@
           "rank_change": "0"
         },
         {
+          "uid": "bbbb5f34-8bbb-41c0-a049-8c4fb9f5558e",
+          "score": 11160.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
           "uid": "fd56912b-38a4-4f33-a9f9-b0950ef0bea5",
           "score": 11120.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "e9d4cf68-4780-4b6e-a48b-84fdd90d5194",
           "score": 11056.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "a7260b0c-7cef-4776-82eb-3616e8c800ba",
           "score": 10800.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "90e2513c-1f1e-444b-b71d-4e1a976319e9",
           "score": 10752.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "97102dd3-3866-48e4-a7c2-1d52c86527e5",
           "score": 10720.0,
           "nickname": "\uc6b0\uc641\uad73\uc308\uc9d3\ub3c8\uac15\ud0c8\uc790\uace0\uc138\uad6c",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "02a30333-4e64-4b1c-8831-81cfca71544c",
           "score": 10400.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "9b4fdfaa-d773-491c-a372-b836ee002bb9",
           "score": 10260.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "47207c8f-142d-481f-8193-18ece77b9eba",
           "score": 10238.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
           "score": 10080.0,
           "nickname": "\ubc29\ud328",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
           "score": 9840.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "+1"
+          "nickname": "\ud788\uc789\uc774",
+          "rank_change": "-1"
         },
         {
           "uid": "4e268bcf-8598-48e6-88f2-96337a309da1",
@@ -599,13 +605,7 @@
           "uid": "ad68ba54-b19c-4bf3-938a-d14508bdae86",
           "score": 9520.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "89ed6f6f-60c3-44ca-8a19-ff93ecdf3742",
-          "score": 9287.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         }
       ],
       "top_all_time": [
@@ -904,10 +904,10 @@
           "rank_change": "0"
         },
         {
-          "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
-          "score": 11280.0,
-          "nickname": "\ubc29\ud328",
-          "rank_change": "0"
+          "uid": "bbbb5f34-8bbb-41c0-a049-8c4fb9f5558e",
+          "score": 11420.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
         }
       ]
     },
@@ -961,85 +961,85 @@
           "uid": "00a684c6-6ddd-4361-98d6-850f732c188c",
           "score": 0.0,
           "nickname": "\ud3ec\uc778\ud2b8\ub180\uc774\uae30\uc6d0",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "0dc72656-514a-4c2f-910b-638c4a8a605c",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "0e420620-9ae1-4249-8507-43a6a6fc8ac8",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
           "score": 0.0,
           "nickname": "\ubc29\ud328",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "2ded67b1-9a77-4e9f-a111-43b85466bc53",
           "score": 0.0,
           "nickname": "\uc641\uad73\ud615\uc0ac\ub791\ud574",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "4c5c06a8-14af-4577-805d-f130d8e37c9f",
           "score": 0.0,
           "nickname": "\ubcf4\ub9ac\uc544\uc789\uad50",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "6850e646-7d9a-4dc2-a0c3-bfc44053a921",
           "score": 0.0,
           "nickname": "c",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "6cbc7b2b-66fb-4e87-8b61-b034031eb382",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "78361a88-d0cd-41f1-a87c-a26053e35df2",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "b7f6c50e-c33e-4c74-b422-f1a367da2609",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "ceef2ba0-574c-4acb-9de1-f2f08981554e",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "dd4a7b58-b6a1-4639-811a-258ab5ae1e45",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "e68cd14f-c929-4fee-9f21-28c3262238bb",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "f3ec7d4b-f1aa-44d0-a8d9-66bec17b8a77",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         }
       ],
       "top_30_days": [
@@ -1089,85 +1089,85 @@
           "uid": "00a684c6-6ddd-4361-98d6-850f732c188c",
           "score": 0.0,
           "nickname": "\ud3ec\uc778\ud2b8\ub180\uc774\uae30\uc6d0",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "0dc72656-514a-4c2f-910b-638c4a8a605c",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "0e420620-9ae1-4249-8507-43a6a6fc8ac8",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
           "score": 0.0,
           "nickname": "\ubc29\ud328",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "2ded67b1-9a77-4e9f-a111-43b85466bc53",
           "score": 0.0,
           "nickname": "\uc641\uad73\ud615\uc0ac\ub791\ud574",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "4c5c06a8-14af-4577-805d-f130d8e37c9f",
           "score": 0.0,
           "nickname": "\ubcf4\ub9ac\uc544\uc789\uad50",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "6850e646-7d9a-4dc2-a0c3-bfc44053a921",
           "score": 0.0,
           "nickname": "c",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "6cbc7b2b-66fb-4e87-8b61-b034031eb382",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "78361a88-d0cd-41f1-a87c-a26053e35df2",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "b7f6c50e-c33e-4c74-b422-f1a367da2609",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "ceef2ba0-574c-4acb-9de1-f2f08981554e",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "dd4a7b58-b6a1-4639-811a-258ab5ae1e45",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "e68cd14f-c929-4fee-9f21-28c3262238bb",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "f3ec7d4b-f1aa-44d0-a8d9-66bec17b8a77",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         }
       ],
       "top_all_time": [
@@ -1241,61 +1241,61 @@
           "uid": "6cbc7b2b-66fb-4e87-8b61-b034031eb382",
           "score": 2200.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "f3ec7d4b-f1aa-44d0-a8d9-66bec17b8a77",
           "score": 1760.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "2ded67b1-9a77-4e9f-a111-43b85466bc53",
           "score": 1200.0,
           "nickname": "\uc641\uad73\ud615\uc0ac\ub791\ud574",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "0e420620-9ae1-4249-8507-43a6a6fc8ac8",
           "score": 1040.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "295bea38-f071-4918-a7b9-cca3baba7045",
           "score": 140.0,
           "nickname": "\ubc29\ud328",
-          "rank_change": "-1"
+          "rank_change": "0"
         },
         {
           "uid": "00a684c6-6ddd-4361-98d6-850f732c188c",
           "score": 120.0,
           "nickname": "\ud3ec\uc778\ud2b8\ub180\uc774\uae30\uc6d0",
-          "rank_change": "new"
+          "rank_change": "0"
         },
         {
           "uid": "b7f6c50e-c33e-4c74-b422-f1a367da2609",
           "score": 100.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "6850e646-7d9a-4dc2-a0c3-bfc44053a921",
           "score": 0.0,
           "nickname": "c",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "78361a88-d0cd-41f1-a87c-a26053e35df2",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         },
         {
           "uid": "ceef2ba0-574c-4acb-9de1-f2f08981554e",
           "score": 0.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "-2"
+          "rank_change": "0"
         }
       ]
     },
@@ -1452,34 +1452,34 @@
           "rank_change": "0"
         },
         {
+          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
+          "score": 26940.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+4"
+        },
+        {
           "uid": "a6105de1-36d3-4ff0-9a66-574a7dfbb77d",
           "score": 26730.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "91e498fb-51f2-4ad9-b361-94d013707dc1",
           "score": 26616.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "3a0fcd6f-8d74-4b35-aac4-34ae51e0bf4d",
           "score": 26600.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "eb61fedb-2680-467c-b578-141dd0f38340",
           "score": 26460.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
-          "score": 26020.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "4100fc3b-500e-485d-9cc4-172c676013b5",
@@ -1566,16 +1566,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
+          "score": 15800.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+1"
+        },
+        {
           "uid": "bb720ca4-c272-45a4-b03c-68ebf22d6f76",
           "score": 15480.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
-          "score": 15400.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "17f24fbd-b9f4-4593-9fa5-0fd4b2ca03e2",
@@ -1640,7 +1640,7 @@
         {
           "uid": "fe71689c-4333-4778-9a27-1ea32f509673",
           "score": 11400.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\u3141\u3141\u3141\u3141\u3141\u3141\u3141\u3141",
           "rank_change": "0"
         },
         {
@@ -1656,16 +1656,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "e391680f-9db0-4917-96bc-a54518d0d4ac",
+          "score": 10600.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
           "uid": "e175a5a6-6dfd-48ec-85a5-477d6cd03e73",
           "score": 10444.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "8b22db61-3073-4c95-bb4d-ea88b2f15706",
-          "score": 10360.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         }
       ],
       "top_30_days": [
@@ -1754,34 +1754,34 @@
           "rank_change": "0"
         },
         {
+          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
+          "score": 26940.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+4"
+        },
+        {
           "uid": "a6105de1-36d3-4ff0-9a66-574a7dfbb77d",
           "score": 26730.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "91e498fb-51f2-4ad9-b361-94d013707dc1",
           "score": 26616.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "3a0fcd6f-8d74-4b35-aac4-34ae51e0bf4d",
           "score": 26600.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "eb61fedb-2680-467c-b578-141dd0f38340",
           "score": 26460.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
-          "score": 26020.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "4100fc3b-500e-485d-9cc4-172c676013b5",
@@ -1868,16 +1868,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
+          "score": 15800.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+1"
+        },
+        {
           "uid": "bb720ca4-c272-45a4-b03c-68ebf22d6f76",
           "score": 15480.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
-          "score": 15400.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "17f24fbd-b9f4-4593-9fa5-0fd4b2ca03e2",
@@ -1942,7 +1942,7 @@
         {
           "uid": "fe71689c-4333-4778-9a27-1ea32f509673",
           "score": 11400.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\u3141\u3141\u3141\u3141\u3141\u3141\u3141\u3141",
           "rank_change": "0"
         },
         {
@@ -1958,16 +1958,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "e391680f-9db0-4917-96bc-a54518d0d4ac",
+          "score": 10600.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
           "uid": "e175a5a6-6dfd-48ec-85a5-477d6cd03e73",
           "score": 10444.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "8b22db61-3073-4c95-bb4d-ea88b2f15706",
-          "score": 10360.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         }
       ],
       "top_all_time": [
@@ -2032,16 +2032,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
+          "score": 38620.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+1"
+        },
+        {
           "uid": "91e498fb-51f2-4ad9-b361-94d013707dc1",
           "score": 37719.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "2feb6d6b-2d85-47e5-a86e-12eda0b49874",
-          "score": 37700.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "eb61fedb-2680-467c-b578-141dd0f38340",
@@ -2206,16 +2206,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
+          "score": 16400.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "+1"
+        },
+        {
           "uid": "166b28b2-7192-417f-bfe4-197527c40935",
           "score": 16100.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
-        },
-        {
-          "uid": "3f329483-f1bb-4b13-b0e0-4acaed22dcb2",
-          "score": 16000.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         },
         {
           "uid": "edac9070-c6ab-453b-bc17-ce945b731d0d",
@@ -2232,7 +2232,7 @@
         {
           "uid": "fe71689c-4333-4778-9a27-1ea32f509673",
           "score": 15600.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\u3141\u3141\u3141\u3141\u3141\u3141\u3141\u3141",
           "rank_change": "0"
         },
         {
@@ -2852,6 +2852,52 @@
           "score": 0.0,
           "nickname": "\uc775\uba85",
           "rank_change": "0"
+        }
+      ]
+    },
+    "jaesu111": {
+      "nickname": "\uc7ac\uc218\ud53c\uae30",
+      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ja/jaesu111/jaesu111.jpg",
+      "top_7_days": [
+        {
+          "uid": "0ea780b3-8c90-4c52-803f-e5fb335da012",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
+          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        }
+      ],
+      "top_30_days": [
+        {
+          "uid": "0ea780b3-8c90-4c52-803f-e5fb335da012",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
+        },
+        {
+          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "-1"
+        }
+      ],
+      "top_all_time": [
+        {
+          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
+          "score": 1400.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "0"
+        },
+        {
+          "uid": "0ea780b3-8c90-4c52-803f-e5fb335da012",
+          "score": 0.0,
+          "nickname": "\uc775\uba85",
+          "rank_change": "new"
         }
       ]
     },
@@ -3634,6 +3680,12 @@
           "score": 60.0,
           "nickname": "\uc775\uba85",
           "rank_change": "0"
+        },
+        {
+          "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
+          "score": 0.0,
+          "nickname": "\ud788\uc789\uc774",
+          "rank_change": "new"
         }
       ],
       "top_30_days": [
@@ -3648,6 +3700,12 @@
           "score": 60.0,
           "nickname": "\uc775\uba85",
           "rank_change": "0"
+        },
+        {
+          "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
+          "score": 0.0,
+          "nickname": "\ud788\uc789\uc774",
+          "rank_change": "new"
         }
       ],
       "top_all_time": [
@@ -3658,10 +3716,16 @@
           "rank_change": "0"
         },
         {
+          "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
+          "score": 400.0,
+          "nickname": "\ud788\uc789\uc774",
+          "rank_change": "new"
+        },
+        {
           "uid": "120fd1d4-9524-41ee-b965-25d023383750",
           "score": 160.0,
           "nickname": "\uc775\uba85",
-          "rank_change": "0"
+          "rank_change": "-1"
         }
       ]
     },
@@ -6138,7 +6202,7 @@
         {
           "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
           "score": 0.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\ud788\uc789\uc774",
           "rank_change": "0"
         }
       ],
@@ -6146,7 +6210,7 @@
         {
           "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
           "score": 0.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\ud788\uc789\uc774",
           "rank_change": "0"
         }
       ],
@@ -6154,36 +6218,8 @@
         {
           "uid": "acd3ab2b-b9ce-43ab-a5b8-c793a6fa0696",
           "score": 0.0,
-          "nickname": "\uc775\uba85",
+          "nickname": "\ud788\uc789\uc774",
           "rank_change": "0"
-        }
-      ]
-    },
-    "jaesu111": {
-      "nickname": "\uc7ac\uc218\ud53c\uae30",
-      "thumbnail": "//profile.img.sooplive.co.kr/LOGO/ja/jaesu111/jaesu111.jpg",
-      "top_7_days": [
-        {
-          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
-          "score": 0.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "new"
-        }
-      ],
-      "top_30_days": [
-        {
-          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
-          "score": 0.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "new"
-        }
-      ],
-      "top_all_time": [
-        {
-          "uid": "af718b25-ff9d-493a-a103-eed6a4ba4b85",
-          "score": 1400.0,
-          "nickname": "\uc775\uba85",
-          "rank_change": "new"
         }
       ]
     },
