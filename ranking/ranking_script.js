@@ -110,11 +110,43 @@ function createTables(id, streamerData, container) {
                     </td>
                     <td class="change-column">${changeDisplay}</td>
                 `;
+				
+				if (index < 30) {
+                    const nextEntry = sortedData[index - 1];
+                    if (nextEntry) {
+                        const scoreDiff = entry.score - nextEntry.score;
+						const absScoreDiff = Math.abs(scoreDiff);
+						const formattedDiff = absScoreDiff.toLocaleString('ko-KR');
+                        const diffSpan = document.createElement('span');
+                        diffSpan.textContent = ` ${formattedDiff} 포인트차`;
+                        diffSpan.style.display = 'none';
+						diffSpan.style.position = 'absolute';
+                        diffSpan.style.right = '5px';
+            			diffSpan.style.top = '-10px';
+						diffSpan.style.color = '#fff';
+                        diffSpan.style.backgroundColor = 'rgba(200,67,77,0.6)';
+						diffSpan.style.padding = '2px 5px';
+						diffSpan.style.borderRadius = '3px';
+						diffSpan.style.zIndex = '10';
+                        
+                        const nicknameCell = row.querySelector('td:nth-child(3)');
+						nicknameCell.style.position = 'relative';
+						nicknameCell.style.overflow = 'visible';
+                        nicknameCell.appendChild(diffSpan);
+                        
+                        row.addEventListener('mousemove', () => {
+                            diffSpan.style.display = 'inline';
+                        });
+                        row.addEventListener('mouseout', () => {
+                            diffSpan.style.display = 'none';
+                        });
+					}
+                }
                 tbody.appendChild(row);
             });
         } else {
             const row = document.createElement('tr');
-            row.innerHTML = `<td colspan="4">No data available</td>`;
+            row.innerHTML = `<td colspan="4">데이터 없음</td>`;
             tbody.appendChild(row);
         }
         
@@ -297,21 +329,32 @@ document.addEventListener('DOMContentLoaded', async function() {
         const timeSpan = document.createElement('span');
         timeSpan.textContent = `갱신시간: ${updatedTime}`;
         timeSpan.style.display = "block";
-        timeSpan.style.marginTop = "2vh";
+        timeSpan.style.marginTop = "1.5vh";
 		timeSpan.style.marginLeft = "1.5vw";
         timeSpan.style.fontSize = "15px";
         timeSpan.style.color = "blue";
 
+		const announcement = document.createElement('span');
+		announcement.textContent = "방송 당일 포인트를 업데이트하지 못한 채 브라우저가 종료된 경우, 다음 날 브라우저를 실행하면 업데이트가 될 수 있습니다.\n이로 인해 리더보드 갱신이 다음 날 이루어질 수도 있습니다.";
+        announcement.style.display = "block";
+		announcement.style.whiteSpace = "pre-line";
+		announcement.style.lineHeight = "1.4";
+        announcement.style.marginTop = "2vh";
+		announcement.style.marginLeft = "1.5vw";
+        announcement.style.fontSize = "14px";
+        announcement.style.color = "black";
+		
 		const warningText = document.createElement('span');
 //        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
 		warningText.textContent = "닉네임 설정은 팝업창 세부설정탭에서 하실 수 있습니다.";
         warningText.style.display = "block";
-        warningText.style.marginTop = "8vh";
+        warningText.style.marginTop = "1.5vh";
 		warningText.style.marginLeft = "1.5vw";
         warningText.style.fontSize = "16px";
         warningText.style.color = "purple";
 		
         banner.textContent = "";
+		banner.appendChild(announcement);
 		banner.appendChild(warningText);
         banner.appendChild(timeSpan);
 		
