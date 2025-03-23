@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하트포인트 리더보드</title>
+  <link rel="icon" href="judon.png" type="image/png">
+  <link rel="stylesheet" href="ranking_styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="banner"></div>
+    <div class="container">
+      <div class="main-section">
+        <div id="tables-container">
+          <p>데이터를 불러오는 중...</p>
+        </div>
+      </div>
+      <div class="search-section">
+        <h1>스트리머 검색</h1>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="닉네임 또는 ID" autocomplete="off">
+          <button onclick="searchId()">검색</button>
+          <div id="autocomplete-dropdown"></div>
+        </div>
+        <div id="search-result">
+          <!-- 검색 결과가 여기에 표시됩니다 -->
+        </div>
+        <img src="corner.png" alt="bottom-right" class="corner-image">
+      </div>
+    </div>
+  </div>
+  <script src="ranking_script.js"></script>
+</body>
+</html>

@@ -15,7 +15,8 @@
 <body>
 <div class="content">
   <div class="tabs">
-    <button class="tab-button" data-tab="tab1">사용설명서</button>
+    <button class="tab-button active" data-tab="tab1">사용설명서</button>
+	<button class="tab-button" data-tab="tab4">하트포인트</button>
 	<button class="tab-button" data-tab="tab2">F&nbsp;A&nbsp;Q</button>
     <button class="tab-button" data-tab="tab3">업데이트 내역</button>
   </div>
@@ -71,6 +72,36 @@
     </div>
   </div>
 </div>
+	<div id="tab4" class="tab-content" style="display: none;">
+		<div class="title-update"><img src="judon.png" alt="judon" class="judon">
+      하트포인트
+    </div>
+		<div class="heartpoint-content">
+		<p><img src="beat_heart.webp" alt="heart_basic" style="width: 20px;">하트포인트는 방송시청과 참여로 모을수 있는 포인트입니다.<br>
+			포인트를 모으기 원하는 방송에 들어갔다면 채팅창 상단에 있는 포인트박스에서 시작버튼을 눌러주세요.<img src="heart_start.webp" alt="heart_start" style="width: 120px; position: absolute"><br>
+			시작버튼을 누르지 않으면 해당 방송에서는 포인트가 모이지 않습니다.</p>
+		<p>현재 포인트 획득 방법은 세 가지가 있습니다.<br>
+		1. 방송시청시 주기적으로 포인트를 획득합니다.<br>
+		2. 가끔 하트아이콘이 활발히 움직일때<img src="shake_heart.webp" alt="heart_shake" style="width: 20px;"> 하트를 클릭하면 다량의 보너스 포인트를 획득합니다.<br>
+		3. 채팅을 칠때마다 포인트를 획득합니다.</p>
+		
+		<p>주기적으로 획득하는 포인트는 구독자와 비구독자 사이에 차이가 있습니다. 1티어 구독과 2티어 구독사이에도 차이가 있으며 구독개월 수가 늘어날수록 미량의 포인트를 더 획득합니다.<br>1티어 구독자라도 3년 이상의 장기구독자라면 이제 막 시작한 2티어 구독자보다 더 많은 포인트를 획득할 수 있습니다.</p>
+		<p>비구독자라도 채팅을 열심히 친다면 충분히 따라잡는게 가능합니다. 채팅과 보너스 포인트는 구독자와 비구독자 사이에 차등이 없습니다. (추후 밸런스가 조정될 수도 있습니다)
+			<br><span style="color: red;">과도한 혹은 지나치게 반복적인 채팅은 채팅제재의 사유가 될 수있습니다.</span></p>
+			
+			<p>하트포인트는 트위치 채널포인트와같은 배팅기능을 지원하진 않습니다.<br>
+		대신해서, 누가 더 활발히 방송에 참여해 더 많은 포인트를 모았는가 <strong>경쟁</strong>이 가능합니다.<br>
+		누적포인트 이외에도 7일, 30일 랭킹을 산출해, 후발주자도 경쟁에 참여가 가능하게 했습니다.</p>
+		
+		<p>또한 10만포인트 달성시 뱅온예약기에서 사용가능한 소소한 특전이 지급되며, 이세돌과 우왁굳님 방송에는 각기 다른 왁세돌 특전이 있습니다.<br>
+		7개의 왁세돌 특전을 모두 모아보세요.</p>
+			
+		<p>리더보드는 1시간에 한번씩 업데이트 됩니다. 다만, 사용자와 서버 데이터베이스간 업데이트가 실시간이 아니며, 리더보드에 내 점수가 갱신되는 시간은 더 오래 걸릴 수 있습니다.</p>
+		<p>박스 클릭안될시 ON 옵션은 포인트박스가 마우스에 반응하지 않을때만 키는걸 추천드립니다. 포인트박스를 최상단 요소로 만드는 옵션이라 프로필 스크롤을 내렸을때 겹쳐보일 수 있습니다.</p>
+	<a href="https://idkwtsay.github.io/rankpage/ranking/" target="_blank" rel="noopener noreferrer"><span style="cursor: pointer; color: blue; text-decoration: underline; position: absolute; font-size: 20px;">리더보드 바로가기</span></a>
+		
+	</div>	
+	</div>
 	<div id="tab2" class="tab-content" style="display: none;">
 		<div class="title-update"><img src="judon.png" alt="judon" class="judon">
       F&nbsp;A&nbsp;Q
@@ -88,12 +119,32 @@
             <div class="faq-title">방송창이 열리지 않습니다.</div>
             <div class="faq-content">이세돌 뱅온 예약기는 1분에 한번씩 방송상태를 확인합니다. 즉, 빠르면 1,2초만에도 뱅온을 감지하지만 길면 뱅온 후 1분이 지나서야 뱅온을 감지합니다. 하지만, 브라우저 상태나 환경에 따라 간혹 1분을 넘기는 경우도 존재할 수 있습니다. 만약 뱅온후 2~3분이 지났는데 뱅온 예약기가 동작하지 않았다면, 우선 팝업창을 열어 설정을 확인하시고, (해당 이세돌의 뱅온 알람이 켜져있는지와, 3개 이상의 생방송이 켜져있을때 켜짐 방지가 되어있지 않은지) 설정이 제대로 되어있는데 동작하지 않았다면, 추후 크롬을 껐다켜보거나 그래도 고쳐지지 않을 경우 뱅온예약기를 삭제 후 재설치 하시는 방법을 권장드립니다. 더해서 만약 해당 방송을 어떤 방식으로든 한 번이라도 들어갔다가 나왔던경우, 이미 진입한 방송으로 저장되어 창을 열지 않습니다. 이는 오동작이 아닙니다. <br>해결이 되지 않는다면, roman100j12@gmail.com 로 연락주시면 최대한 도와드리겠습니다.</div>
         </div>
-    </div>
+    	</div>
 	</div>
 	<div id="tab3" class="tab-content" style="display: none;">
 		<div class="title-update"><img src="judon.png" alt="judon" class="judon">
       업데이트 내역
     </div>
+	<div class="update-list">
+    <p>
+      <strong>v3.0.2</strong><br>
+      ▶스크린모드에서 포인트박스 포지션 문제 해결<br>
+      ▶하트포인트 수급량 너프 (획득 간격 소폭 상승, 채팅 수급량 절반으로 줄임)<br>
+      - 의도했던 최대 하루 수급량보다 훨씬 많은 하루만에 10만포인트를 달성하시는 분이 몇 분있어 너프가 필요하다 판단했습니다.<br>
+      ▶동기화 저장소에 데이터 백업과 다운로드 기능추가 (반응성을 위해서 로컬을 메인으로 하는건 그대로)<br>
+      ▶포인트 업로드 다운로드 주기 단축 (유지 비용문제와 관련된 안건이라 추후 다시 늘어날 수도 있습니다.)
+    </p>
+	<p>
+      <strong>v3.0.1</strong><br>
+      ▶하트포인트 zindex올리는 옵션추가<br>
+      ▶전체화면에서 나올시 바로 리포지셔닝
+    </p>
+    <p>
+      <strong>v3.0.0</strong><br>
+      ▶하트포인트 신설<br>
+      ▶리더보드 페이지 작성<br>
+      ▶버그 수정
+    </p>
 	<p>
       <strong>v2.5.0</strong><br>
       ▶OGQ단축어 매크로 기능이 추가되었습니다.<br>
@@ -208,7 +259,7 @@
       <strong>v1.1</strong><br>
       ▶디시인사이드에서 아프리카tv vod링크를 자동으로 플레이어로 전환시켜주는 기능을 넣었습니다. 이제 디시인사이드에서도 편하게 클립이나 다시보기를 시청하세요.
     </p>    
-
+</div>
 	</div>
 </div>
 	<div class="bottom">
@@ -216,7 +267,7 @@
 		<a href="https://youtu.be/fgSXAKsq-Vo?si=cuCOvIsEu9eP6RYe" target="_blank" rel="noopener noreferrer">
     		<img src="sixsedol.webp" alt="sixsedol">
 		</a>
-		<div class="bottom-donation">이세돌 뱅온 예약기는 운영자에게 약간의 유지비용 발생합니다. 팝업창 우측 하단의 Buy me a coffee 버튼을 눌러 후원을 해 주실 수도 있습니다.</div>
+		<div class="bottom-donation">버그제보 및 문의 : roman100j12@gmail.com</div>
 	</div>
 </body>
 <script src="manual_script.js"></script>
