@@ -13,7 +13,9 @@ body {
 }
 
 .banner {
-    height: 20vh;
+/*    height: 21.1vh;*/
+	aspect-ratio: 10 / 1;
+	width: 100%;
     background-image: url('ranking_banner.png');
     background-size: cover;
     background-position: center;

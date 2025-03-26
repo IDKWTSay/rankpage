@@ -181,6 +181,7 @@ function addStreamerBanners() {
             
             const bannerImg = document.createElement('div');
             bannerImg.className = 'streamer-banner-img';
+			bannerImg.style.marginTop = '20px';
             bannerImg.style.width = '60px';
             bannerImg.style.height = '60px';
             bannerImg.style.borderRadius = '50%';
@@ -326,6 +327,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const updatedTime = rankingData.updated;
         const banner = document.querySelector('.banner');
     if (banner) {
+		
         const timeSpan = document.createElement('span');
         timeSpan.textContent = `갱신시간: ${updatedTime}`;
         timeSpan.style.display = "block";
@@ -355,15 +357,17 @@ document.addEventListener('DOMContentLoaded', async function() {
 		
 		const countingImg = document.createElement('img');
 		countingImg.src = 'https://hits.sh/hits.sh/idkwtsay.github.io/rankpage/ranking.svg?view=today-total&style=for-the-badge&label=%EB%B0%A9%EB%AC%B8%EC%88%98&color=575757&labelColor=ec7b9a&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD80lEQVQ4yy1TeUybZRh%2F0c2YaMY2FkoPQIFytV9LKb2oXDvYIFyrY0NhS43ARDZgQ%2Bix9uv39YBeMI3ihIHMBTNmAopmbMk2FFkNC26oQ2VCpokbi0dMjPFq%2B72PL8Q%2F3uTJm%2Bd3PckP0TSNnE4W%2Bf0%2BFOwLbsx2ux2xLifq8fYgT28PYv%2F%2Fo%2B10DMsyyNPj3thzOBwIuciiyWTJKNbvm6k1PO8%2Bdcqe5vZ4EG21J3W0thecPNahd9jsQk%2BPB7ncbgJitr5yoivfbLKkMoQM%2BQNedNBQHxDEpcNTCVlQJC%2F5rUpXFsoTyf7QiSiQbheDOinn99rCyllDSc1Meor8QdyTIqjae%2BC9YF8AoUDQj%2FbtrhrLEMoixZn6v1R8CaQ9kQhlYjUcK6zhxLEpnCI%2BC%2BRxYtDy5aAQUjj2cR6385my6dOv9hMHQR%2BqrTjYrxHkgFZIhZUJWdHMbanR7pJabNl9CGdsTcVqAcWphFRULSIiycp%2FdIkqXLHXMOLzexFibDS1M1u%2FkktUlAnZURWf4rK3p2FP1QvYVWnEkjgxVgkonMeXEiIZpxZS%2F%2Br5CmhpeIlxkWMib8D3WNP%2BIwMaHgVakTysEckIKBUclUYYqO8ABU8CahJrPRoBY62ICqt2ZEJj9eHzveR%2B6wToSGndR5p4KeQn50Y0fAmWxaVBs74aJtucUJCUA%2FmJ1Ho8UPKycH6SPKImbg%2Foym%2F3%2BgiB08GKy6TFazoBBXnxWVxDcRXXXFkHsthUGG00QWuRAcpziqBCXgit1fVYFS%2BJ6oUyXK3Y873L7YpBnU1tJ0pSNH%2FqiIJ0Swr2W6z4DdYFRAlqpIXA1B0FY6kBju5%2FDp%2Fr7%2Bc0PEm0KCkPqnNLl1mnE6GTDa2jxU%2Brwopt6dDd0Mzd%2F3Iefxe6jm9d%2FhCHpibw%2FKVJvHDpA7w8ew3Wlj7HVuPLXPbmlIjp0Iu%2FTFx8V4lsjZ3v7EnLDxcIlLjDYAyfP%2FN6tLvtOHdtYhz%2FvLyIf%2FrmNp6%2FMoW72o9zF0cHOXdLZ6Rp17Nwc3wMLk9N1qO2hhZveXrB37uSNdExpxeWpifg69mrsHLzU7wyd51bvTHDrS7c4BZnrnChC2%2FD0tVpWF2cX7pwbrjSTjtiEEuzksO6moe1maVwtu81Zumzufd%2FWFx4cP%2FbLyL3QjNwL%2FQxrN29gx%2FevRP58auFX2%2FNfTIeCAR4Xd0mxDAMIXC7ENN9SmtvNxtphkE2O418Pt%2BWM28OZIyMDKvODg9ph4cGc4cG38oM9vXtsNloZLPZEMuyj5JiIeSg6UccpFWMm0WMw7GZZZhNNKmu1WpFZrMZWcwWZLZYkIU8%2BwaQ2UTAMetVJg7Qf7xZ2y9K2xlZAAAAAElFTkSuQmCC';
-		countingImg.style.float = 'right';
-		countingImg.style.marginTop = "8.9vh";
+		
+		countingImg.style.position = 'absolute';
+		countingImg.style.right = '0';
+		countingImg.style.top = '20%';
 		
 		
 		
 		
         banner.textContent = "";
 		banner.appendChild(announcement);
-		banner.appendChild(warningText);
+//		banner.appendChild(warningText);
         banner.appendChild(timeSpan);
 		banner.appendChild(countingImg);
 		
