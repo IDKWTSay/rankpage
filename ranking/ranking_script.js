@@ -329,34 +329,44 @@ document.addEventListener('DOMContentLoaded', async function() {
         const timeSpan = document.createElement('span');
         timeSpan.textContent = `갱신시간: ${updatedTime}`;
         timeSpan.style.display = "block";
-        timeSpan.style.marginTop = "1.5vh";
+        timeSpan.style.marginTop = "1vh";
 		timeSpan.style.marginLeft = "1.5vw";
         timeSpan.style.fontSize = "15px";
-        timeSpan.style.color = "blue";
+        timeSpan.style.color = "black";
 
 		const announcement = document.createElement('span');
 		announcement.textContent = "방송 당일 포인트를 업데이트하지 못한 채 브라우저가 종료된 경우, 다음 날 브라우저를 실행하면 업데이트가 될 수 있습니다.\n이로 인해 리더보드 갱신이 다음 날 이루어질 수도 있습니다.";
         announcement.style.display = "block";
 		announcement.style.whiteSpace = "pre-line";
 		announcement.style.lineHeight = "1.4";
-        announcement.style.marginTop = "2vh";
+        announcement.style.marginTop = "1vh";
 		announcement.style.marginLeft = "1.5vw";
-        announcement.style.fontSize = "14px";
-        announcement.style.color = "black";
+        announcement.style.fontSize = "13px";
+        announcement.style.color = "white";
 		
 		const warningText = document.createElement('span');
 //        warningText.textContent = "부적절한 닉네임 사용시 영구차단될 수 있습니다";
 		warningText.textContent = "닉네임 설정은 팝업창 세부설정탭에서 하실 수 있습니다.";
         warningText.style.display = "block";
-        warningText.style.marginTop = "1.5vh";
+        warningText.style.marginTop = "1vh";
 		warningText.style.marginLeft = "1.5vw";
         warningText.style.fontSize = "16px";
         warningText.style.color = "purple";
+		
+		const countingImg = document.createElement('img');
+		countingImg.src = 'https://hits.sh/hits.sh/idkwtsay.github.io/rankpage/ranking.svg?view=today-total&style=for-the-badge&label=%EB%B0%A9%EB%AC%B8%EC%88%98&color=575757&labelColor=ec7b9a&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD80lEQVQ4yy1TeUybZRh%2F0c2YaMY2FkoPQIFytV9LKb2oXDvYIFyrY0NhS43ARDZgQ%2Bix9uv39YBeMI3ihIHMBTNmAopmbMk2FFkNC26oQ2VCpokbi0dMjPFq%2B72PL8Q%2F3uTJm%2Bd3PckP0TSNnE4W%2Bf0%2BFOwLbsx2ux2xLifq8fYgT28PYv%2F%2Fo%2B10DMsyyNPj3thzOBwIuciiyWTJKNbvm6k1PO8%2Bdcqe5vZ4EG21J3W0thecPNahd9jsQk%2BPB7ncbgJitr5yoivfbLKkMoQM%2BQNedNBQHxDEpcNTCVlQJC%2F5rUpXFsoTyf7QiSiQbheDOinn99rCyllDSc1Meor8QdyTIqjae%2BC9YF8AoUDQj%2FbtrhrLEMoixZn6v1R8CaQ9kQhlYjUcK6zhxLEpnCI%2BC%2BRxYtDy5aAQUjj2cR6385my6dOv9hMHQR%2BqrTjYrxHkgFZIhZUJWdHMbanR7pJabNl9CGdsTcVqAcWphFRULSIiycp%2FdIkqXLHXMOLzexFibDS1M1u%2FkktUlAnZURWf4rK3p2FP1QvYVWnEkjgxVgkonMeXEiIZpxZS%2F%2Br5CmhpeIlxkWMib8D3WNP%2BIwMaHgVakTysEckIKBUclUYYqO8ABU8CahJrPRoBY62ICqt2ZEJj9eHzveR%2B6wToSGndR5p4KeQn50Y0fAmWxaVBs74aJtucUJCUA%2FmJ1Ho8UPKycH6SPKImbg%2Foym%2F3%2BgiB08GKy6TFazoBBXnxWVxDcRXXXFkHsthUGG00QWuRAcpziqBCXgit1fVYFS%2BJ6oUyXK3Y873L7YpBnU1tJ0pSNH%2FqiIJ0Swr2W6z4DdYFRAlqpIXA1B0FY6kBju5%2FDp%2Fr7%2Bc0PEm0KCkPqnNLl1mnE6GTDa2jxU%2Brwopt6dDd0Mzd%2F3Iefxe6jm9d%2FhCHpibw%2FKVJvHDpA7w8ew3Wlj7HVuPLXPbmlIjp0Iu%2FTFx8V4lsjZ3v7EnLDxcIlLjDYAyfP%2FN6tLvtOHdtYhz%2FvLyIf%2FrmNp6%2FMoW72o9zF0cHOXdLZ6Rp17Nwc3wMLk9N1qO2hhZveXrB37uSNdExpxeWpifg69mrsHLzU7wyd51bvTHDrS7c4BZnrnChC2%2FD0tVpWF2cX7pwbrjSTjtiEEuzksO6moe1maVwtu81Zumzufd%2FWFx4cP%2FbLyL3QjNwL%2FQxrN29gx%2FevRP58auFX2%2FNfTIeCAR4Xd0mxDAMIXC7ENN9SmtvNxtphkE2O418Pt%2BWM28OZIyMDKvODg9ph4cGc4cG38oM9vXtsNloZLPZEMuyj5JiIeSg6UccpFWMm0WMw7GZZZhNNKmu1WpFZrMZWcwWZLZYkIU8%2BwaQ2UTAMetVJg7Qf7xZ2y9K2xlZAAAAAElFTkSuQmCC';
+		countingImg.style.float = 'right';
+		countingImg.style.marginTop = "8.9vh";
+		
+		
+		
 		
         banner.textContent = "";
 		banner.appendChild(announcement);
 		banner.appendChild(warningText);
         banner.appendChild(timeSpan);
+		banner.appendChild(countingImg);
+		
 		
     }
         allStreamers = rankingData.streamers;

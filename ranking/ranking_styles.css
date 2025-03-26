@@ -219,8 +219,8 @@ h3 {
 }
 
 .section-nav-buttons button {
- 	width: 2vw;
- 	height: 4vh;
+ 	width: 2.1vw;
+ 	height: 4.5vh;
  	padding: 0;
  	border: none;
  	background-color: rgba(255, 235, 59, 0.2);
@@ -254,8 +254,8 @@ h3 {
 }
 
 .section-nav-buttons img {
- 	width: 1.1vw;
- 	height: 2vh;
+ 	width: 1.2vw;
+ 	height: 2.6vh;
 	opacity: 0.7;
 }
 
