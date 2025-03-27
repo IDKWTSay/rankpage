@@ -3,15 +3,26 @@ let allStreamers = null;
 let allIds = [];
 let allNicknames = [];
 
+// async function fetchRankingData() {
+//     try {
+//         const response = await fetch('ranking_data.json');
+//         if (!response.ok) {
+//             throw new Error(`HTTP 오류: ${response.status}`);
+//         }
+//         const data = await response.json();
+//         return data;
+//     } catch (error) {
+//         return null;
+//     }
+// }
+
 async function fetchRankingData() {
     try {
-        const response = await fetch('ranking_data.json');
-        if (!response.ok) {
-            throw new Error(`HTTP 오류: ${response.status}`);
-        }
-        const data = await response.json();
-        return data;
-    } catch (error) {
+        const response = await fetch('https://gist.githubusercontent.com/IDKWTSay/e2779cfa06b34a78cc34f58e6efc6f64/raw/e130e5ce402a322b1cc48660bc0996092c327878/ranking_data.json');
+        if (!response.ok) throw new Error(`HTTP 오류: ${response.status}`);
+        return await response.json();
+    } catch (e) {
+        console.error(e);
         return null;
     }
 }
@@ -360,7 +371,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 		
 		countingImg.style.position = 'absolute';
 		countingImg.style.right = '0';
-		countingImg.style.top = '20%';
+		countingImg.style.top = '22%';
 		
 		
 		
