@@ -16,15 +16,13 @@ let allNicknames = [];
 //     }
 // }
 
+const GIST_URL = "https://gist.githubusercontent.com/IDKWTSay/e2779cfa06b34a78cc34f58e6efc6f64/raw/ranking_data.json";
+
 async function fetchRankingData() {
-    try {
-        const response = await fetch('https://gist.githubusercontent.com/IDKWTSay/e2779cfa06b34a78cc34f58e6efc6f64/raw/e7141add3c5676bf42cea25aea8d19bbb1f7087b/ranking_data.json');
-        if (!response.ok) throw new Error(`HTTP 오류: ${response.status}`);
-        return await response.json();
-    } catch (e) {
-        console.error(e);
-        return null;
-    }
+    const response = await fetch(GIST_URL);
+    if (!response.ok) throw new Error("데이터 가져오기 실패");
+    const data = await response.json();
+    return data;
 }
 
 const hoverStyle = document.createElement('style');
