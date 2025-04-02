@@ -383,7 +383,10 @@ function createHallOfFameTable(data) {
             const row = document.createElement('tr');
             headers.forEach((headerKey, cellIndex) => {
                 const td = document.createElement('td');
-				td.style.setProperty('--cell-delay-index', cellIndex);
+				
+//				td.style.setProperty('--cell-delay-index', cellIndex);
+				td.style.setProperty('--column-index', cellIndex);
+				
                 const cellData = rowData[headerKey];
                 let displayText = '-';
                 if (headerKey !== 'date' && Array.isArray(cellData) && cellData.length > 0) {
@@ -437,20 +440,44 @@ function createHallOfFameTable(data) {
     document.body.appendChild(container);
     document.body.appendChild(backButton);
 
-    requestAnimationFrame(() => {
+	    setTimeout(() => {
+        
         container.classList.add('visible');
         backButton.classList.add('visible');
-    });
-	const rows = tbody.querySelectorAll('tr');
-	const initialRowDelay = 1200;
-	const subsequentRowDelay = 5000;
+
+        
+        const rows = tbody.querySelectorAll('tr');
+        const baseRowDelay = 300;
+        const rowStaggerDelay = 100;
+
+        rows.forEach((tr, index) => {
+            setTimeout(() => {
+                tr.classList.add('row-visible');
+            }, baseRowDelay + index * rowStaggerDelay);
+        });
+
+    }, 50);
+} 
 	
-    rows.forEach((tr, index) => {
-        setTimeout(() => {
-            tr.classList.add('row-visible');
-        }, initialRowDelay + index * subsequentRowDelay);
-    });
-}
+	
+
+	
+	
+//	
+//    requestAnimationFrame(() => {
+//        container.classList.add('visible');
+//        backButton.classList.add('visible');
+//    });
+//	const rows = tbody.querySelectorAll('tr');
+//	const initialRowDelay = 1200;
+//	const subsequentRowDelay = 5000;
+//	
+//    rows.forEach((tr, index) => {
+//        setTimeout(() => {
+//            tr.classList.add('row-visible');
+//        }, initialRowDelay + index * subsequentRowDelay);
+//    });
+//}
 
 async function showHallOfFame() {
     if (isHofTransitioning) return;

@@ -198,24 +198,74 @@ body {
 
 .faq-title {
 	font-size: 1.5rem;
-	width: 50%;
+	width: 60%;
 	font-weight: bold;
 	color: white;
 	background-color: #007BFF;
 	padding: 10px 10px;
 	padding-left: 20px;
 	border-radius: 25px;
-	display: inline-block;
+	display: block;
 	margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-title:hover {
+    background-color: #0056b3;
 }
 
 .faq-content {
-	padding: 15px;
-	background-color: #ffffff;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	margin-left: 10px;
+	background-color: #ffffff;	
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	margin-left: 20px;
+    margin-right: 20px;
+	width: 80%;
+    margin-top: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease, padding 1s ease;
+    padding: 0 15px;
+}
+
+.faq-item.active .faq-content {
+    max-height: 1000px;
+    padding: 15px;
+    transition: max-height 1.5s ease;
+}
+
+.image-hover-trigger {
+    color: #007BFF;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.image-hover-trigger:hover {
+    color: #0056b3;
+}
+
+#image-popup-container {
+    position: fixed;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+#image-popup-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.faq-item:first-child .faq-content img {
+    display: none;
 }
 
 .update-list {

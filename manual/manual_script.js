@@ -69,3 +69,86 @@ document.querySelectorAll('.copy-link').forEach(link => {
 
   moveToSlide(0);
 })();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const faqTitles = document.querySelectorAll('.faq-title');
+
+    faqTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            const faqItem = title.closest('.faq-item');
+            faqItem.classList.toggle('active');
+        });
+    });
+
+    const imageTriggers = document.querySelectorAll('.faq-item:first-child .image-hover-trigger');
+    const popupContainer = document.getElementById('image-popup-container');
+
+    if (popupContainer) {
+        imageTriggers.forEach(trigger => {
+            let popupImage = null;
+
+            trigger.addEventListener('mouseenter', (event) => {
+                const imageSrc = trigger.getAttribute('data-image-src');
+                if (!imageSrc) return;
+
+                popupContainer.innerHTML = '';
+
+                popupImage = document.createElement('img');
+                popupImage.src = imageSrc;
+                popupImage.alt = "설명이미지";
+
+                popupContainer.appendChild(popupImage);
+
+                positionPopup(event);
+
+                popupContainer.style.display = 'block';
+
+                document.addEventListener('mousemove', positionPopup);
+            });
+
+            trigger.addEventListener('mouseleave', () => {
+                popupContainer.style.display = 'none';
+                popupContainer.innerHTML = '';
+                popupImage = null;
+
+                document.removeEventListener('mousemove', positionPopup);
+            });
+        });
+
+        function positionPopup(e) {
+            if (!popupContainer || popupContainer.style.display === 'none') return;
+
+            const winWidth = window.innerWidth;
+            const winHeight = window.innerHeight;
+            const popupWidth = popupContainer.offsetWidth;
+            const popupHeight = popupContainer.offsetHeight;
+            const offsetX = 15;
+            const offsetY = 15;
+            let top = e.clientY + offsetY;
+            let left = e.clientX + offsetX;
+            if (left + popupWidth > winWidth) {
+                left = e.clientX - popupWidth - offsetX;
+            }
+            if (left < 0) {
+                left = offsetX;
+            }
+
+            if (top + popupHeight > winHeight) {
+                top = e.clientY - popupHeight - offsetY;
+            }
+            if (top < 0) {
+                top = offsetY;
+            }
+
+            popupContainer.style.left = `${left}px`;
+            popupContainer.style.top = `${top}px`;
+        }
+
+    } else {
+        console.error("이미지 팝업 컨테이너 없");
+    }
+
+});
