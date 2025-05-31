@@ -33,6 +33,32 @@ hoverStyle.textContent = `
 `;
 document.head.appendChild(hoverStyle);
 
+
+// 쿠키 설정 함수
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+}
+
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+
+
+
 function createTables(id, streamerData, container) {
     const idContainer = document.createElement('div');
     idContainer.className = 'id-container';
@@ -667,6 +693,32 @@ document.addEventListener('DOMContentLoaded', async function() {
     const searchInput = document.getElementById('search-input');
     const autocompleteDropdown = document.getElementById('autocomplete-dropdown');
 
+
+    const noticePopup = document.getElementById('notice-popup');
+    const closeNoticeBtn = document.getElementById('close-notice-btn');
+    const dontShowAgainCheckbox = document.getElementById('dont-show-again');
+
+
+//  !!쿠키이름!!
+	const noticeCookieName = 'notice_20250531';
+
+
+
+	if (noticePopup && closeNoticeBtn && dontShowAgainCheckbox) {
+			if (getCookie(noticeCookieName) !== 'true') {
+				noticePopup.style.display = 'block';
+			} else {
+				noticePopup.style.display = 'none';
+			}
+
+			closeNoticeBtn.addEventListener('click', function() {
+				noticePopup.style.display = 'none';
+				if (dontShowAgainCheckbox.checked) {
+					setCookie(noticeCookieName, 'true', 365);
+				}
+			});
+
+
     try {
         rankingData = await fetchRankingData();
         if (rankingData) {
@@ -876,4 +928,5 @@ document.addEventListener('DOMContentLoaded', async function() {
         section.addEventListener('scroll', updateButtonPosition);
         updateButtonPosition();
     }
+}
 });
