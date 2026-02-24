@@ -1,318 +1,494 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>이세돌 뱅온 예약기</title>
+<title>이세돌 뱅온 예약기 매뉴얼</title>
 <link rel="icon" href="judon.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-<style type="text/css">
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="manual.css">
-
 </head>
-
 <body>
-<div class="content">
-  <div class="tabs">
-    <button class="tab-button active" data-tab="tab1">사용설명서</button>
-	<button class="tab-button" data-tab="tab4">하트포인트</button>
-	<button class="tab-button" data-tab="tab2">F&nbsp;A&nbsp;Q</button>
-    <button class="tab-button" data-tab="tab3">업데이트 내역</button>
-  </div>
-<div id="tab1" class="tab-content">
-  <div class="title">
-    <img src="judon.png" alt="judon" class="judon">
-    이세돌 뱅온 예약기 사용설명서
-  </div>
-  <div class="split-container">
-    <div class="left-content">
-      <div class="manual-content">
-        <img src="image001.png" alt="image01">
-        <p>확장 프로그램 최초 설치 시 크롬 우측 상단에 위 버튼을 클릭해 주세요.</p>
-        <p><img src="image002.png" alt="image02"></p>
-        <p>그리고 드래그를 내려 이세돌 뱅온 예약기를 찾아서 핀을 고정시켜 주시면 됩니다. 그러면</p>
-        <p><img src="image003.png" alt="image03"></p>
-        <p>와 같은 아이콘이 크롬 우측상단에 고정으로 떠있게 됩니다.
-          이세돌 뱅온 예약기는 자동뱅온 기능 이외에도 몇 가지 정보를 제공하니, 
-          <em>항상 핀을 고정해 두시는 걸 추천 드립니다.</em> 저 아이콘을 클릭하면
-        </p>
-        <p><img src="image004.png" alt="image04"></p>
-        <p>최초 설치 시에는 위와 같은 팝업창이 뜹니다. 아직 왁물원 공지사항과 뱅온정보 등을 받아오지 않은 상태로 
-          30분 후 최초로 정보들을 받아옵니다.
-        </p>
+<div class="background-orb orb-1" aria-hidden="true"></div>
+<div class="background-orb orb-2" aria-hidden="true"></div>
+
+<main class="page-shell">
+  <header class="hero card">
+    <div class="brand-wrap">
+      <img src="judon.png" alt="judon" class="brand-icon">
+      <div>
+        <p class="eyebrow">SOOP Broadcast Auto Open Extension</p>
+        <h1>이세돌 뱅온 예약기 매뉴얼</h1>
       </div>
     </div>
+  </header>
 
-    <div class="right-content">
-      <p>이세돌 뱅온 예약기는 우왁굳과 이세계아이돌 멤버들의 방송이 켜졌을 때 그에 맞춰 자동으로 해당 방송을 열어주는 확장프로그램입니다.<br>기본적인 기능 이외에도 몇 가지 추가기능이 있어 사용방법을 설명해 드립니다.</p>
-      <p>*원하시는 방송인의 <strong>스위치를 켜두셔야</strong> 동작합니다.<br>
-*최초 설치 시 뜨는 권한허용을 해 주셔야 동작합니다.<br>
-*방송 시작부터 <em>최대 1분여의</em> 딜레이가 있을 수 있습니다. 그 시간 이내에 동작하지 않았다고 문제가 있는 게 아닙니다.<br>
-(이미 방송에 들어갔으면 중복해서 창을 열지 않습니다.)<br>*<strong>파이어폭스 버젼을 사용하기 위해서는 자동재생 설정이 필요합니다. FAQ를 참고해주세요.</strong></p>
-		<div class="slider-container">
-		  <div class="slider-wrapper">
-			<div class="slider-item"><img src="image005.png" alt="이미지 1"></div>
-			<div class="slider-item"><img src="image006.png" alt="이미지 2"></div>
-			<div class="slider-item"><img src="image007.png" alt="이미지 3"></div>
-			<div class="slider-item"><img src="image008.png" alt="이미지 4"></div>
-		  </div>
+  <nav class="tabs" role="tablist" aria-label="매뉴얼 탭">
+    <button type="button" class="tab-button active" role="tab" id="tab-btn-1" aria-controls="tab1" aria-selected="true" data-tab="tab1">사용설명서</button>
+    <button type="button" class="tab-button" role="tab" id="tab-btn-4" aria-controls="tab4" aria-selected="false" data-tab="tab4">하트포인트</button>
+    <button type="button" class="tab-button" role="tab" id="tab-btn-2" aria-controls="tab2" aria-selected="false" data-tab="tab2">FAQ</button>
+    <button type="button" class="tab-button" role="tab" id="tab-btn-3" aria-controls="tab3" aria-selected="false" data-tab="tab3">업데이트 내역</button>
+  </nav>
 
-		  <button class="arrow left-arrow">&lt;</button>
-		  <button class="arrow right-arrow">&gt;</button>
+  <section id="tab1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-btn-1">
+    <div class="panel-grid">
+      <article class="card intro-card">
+        <h2>무엇을 해주는 확장프로그램인가요?</h2>
+        <p>우왁굳 및 이세계아이돌 멤버들의 방송 시작을 감지해 자동으로 방송창을 열어주는 확장프로그램입니다. 자동 뱅온 기능 외에도 공지/상태 확인, 편의 기능, 하트포인트 관련 기능을 함께 제공합니다.</p>
+      </article>
 
-		  <div class="pagination">
-			<button class="page-btn" data-index="0">1</button>
-			<button class="page-btn" data-index="1">2</button>
-			<button class="page-btn" data-index="2">3</button>
-			<button class="page-btn" data-index="3">4</button>
-		  </div>
-		</div>
-
+      <article class="card checklist-card">
+        <h2>작동 전 체크리스트</h2>
+        <ul class="checklist">
+          <li>원하는 방송인의 스위치를 켜 두어야 동작합니다.</li>
+          <li>최초 설치 시 요청되는 권한 허용이 필요합니다.</li>
+          <li>방송 시작 후 감지까지 최대 1분 정도 지연될 수 있습니다.</li>
+          <li>이미 해당 방송에 진입한 상태라면 중복으로 창을 열지 않습니다.</li>
+          <li>파이어폭스는 자동재생 설정이 필요합니다. 자세한 내용은 FAQ를 확인하세요.</li>
+        </ul>
+      </article>
     </div>
+
+    <section class="card steps-card">
+      <h2>설치 직후 빠른 세팅</h2>
+      <div class="quickstart-layout">
+        <ol class="quickstart-list">
+          <li>
+            <div class="quickstart-title">
+              <span class="step-index">STEP 1</span>
+              크롬 우측 상단 확장 프로그램 메뉴를 엽니다.
+            </div>
+            <img src="image001.png" alt="확장 프로그램 버튼 아이콘" class="inline-step-icon">
+          </li>
+          <li>
+            <div class="quickstart-title">
+              <span class="step-index">STEP 2</span>
+              목록에서 이세돌 뱅온 예약기를 찾습니다.
+            </div>
+            <img src="image002.png" alt="확장 프로그램 목록 영역" class="inline-step-icon wide">
+          </li>
+          <li>
+            <div class="quickstart-title">
+              <span class="step-index">STEP 3</span>
+              핀 고정을 켜 아이콘을 항상 상단에 유지합니다.
+            </div>
+            <img src="image003.png" alt="고정된 아이콘" class="inline-step-icon">
+          </li>
+          <li>
+            <div class="quickstart-title">
+              <span class="step-index">STEP 4</span>
+              아이콘 클릭 후 팝업이 열리는지 확인합니다.
+            </div>
+            <p>최초 설치 직후에는 정보가 비어 있을 수 있으며, 약 30분 후 공지/뱅온 정보가 처음 갱신됩니다.</p>
+          </li>
+        </ol>
+        <figure class="quickstart-preview">
+          <img src="image004.png" alt="최초 설치 시 표시되는 팝업 화면">
+          <figcaption>최초 설치 시 팝업 예시</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="card gallery-card">
+      <div class="gallery-head">
+        <h2>팝업 UI 미리보기</h2>
+      </div>
+      <div class="ui-slider" data-ui-slider>
+        <button type="button" class="ui-edge-arrow prev" data-slider-prev aria-label="이전 미리보기">&#10094;</button>
+        <button type="button" class="ui-edge-arrow next" data-slider-next aria-label="다음 미리보기">&#10095;</button>
+        <div class="ui-slider-window">
+          <div class="ui-preview-track">
+            <article class="ui-preview-item line-link">
+              <div class="ui-crop">
+                <img src="ui_general_left.png" alt="일반 탭 좌측 UI">
+              </div>
+              <h3>일반 탭</h3>
+              <ul class="ui-detail-list">
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="switch" data-target-x="0.95" data-target-y="0.03">예약 기능을 키고 끌 수 있는 스위치입니다. 클릭부터 해당 이세돌의 자동 뱅온 기능이 켜집니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="status" data-target-x="0.065" data-target-y="0.21">뱅온정보입니다. 초록색은 뱅온 확정 또는 예정, 노란색은 반반, 빨간색은 후뱅, 회색은 정보가 없는 상태를 뜻합니다.</li>
+                <li>색이 비어 있으면 정보가 업데이트되지 않았다는 뜻이며, 뱅온정보는 매일 자정에 지워지고 아침에 다시 받아옵니다.</li>
+                <li>신호 아이콘 위로 마우스를 올리면 툴팁을 확인할 수 있습니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="multiview" data-target-x="0.95" data-target-y="0.382">스위치를 두 번 누르면 멀티뷰 우선방송 설정이 가능합니다(최대 3인). 세부설정에서 멀티뷰 초과 시 다른 탭 종료로 설정해도 우선방송은 종료되지 않습니다.</li>
+                <li>오픈방송 숲 아이콘을 클릭하면 해당 채널로 바로 이동할 수 있습니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="green-ring" data-target-x="0.22" data-target-y="0.49">방송이 켜지면 프로필 아이콘 주변에 초록 테두리가 표시됩니다. 클릭하면 해당 방송으로 이동할 수 있고, 마우스를 올리면 썸네일과 방제를 확인할 수 있습니다.</li>
+                <li>세부설정에서 커스텀 유저 기능을 활성화하면 입력칸이 생성됩니다. 원하는 스트리머 ID를 정확히 입력하고 체크를 누르면 저장되며, 오른쪽 스위치를 켜야 동작합니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="youtube-feed" data-target-x="0.78" data-target-y="0.84">이세돌, 왁타버스 유튜브를 확인할 수 있습니다. 최신 5개만 표시되며, 새로 올라온 영상은 New 표기가 붙고 30분마다 갱신됩니다.</li>
+              </ul>
+              <svg class="hotspot-svg" aria-hidden="true"></svg>
+            </article>
+
+            <article class="ui-preview-item">
+              <div class="ui-crop">
+                <img src="ui_emoji_left.png" alt="이모티콘 탭 좌측 UI">
+              </div>
+              <h3>이모티콘 탭</h3>
+              <ul class="ui-detail-list">
+                <li>뱅온예약기 설치 시 채팅창 내 이모티콘 복사/붙여넣기 기능이 항상 활성화됩니다.</li>
+                <li>사용설명 위로 마우스를 올리면 기본적인 설명이 표시됩니다.</li>
+                <li>우왁굳+이세돌방에는 응원봉 이모티콘이 기본 할당되어 있으며, `alt`+키 입력 시 4~8개 이모티콘을 빠르게 입력할 수 있습니다.</li>
+                <li>자동 보내기를 ON으로 두면 단축키 입력 즉시 이모티콘 채팅이 전송됩니다. `alt` 키 차단(기본값) 사용 시 크롬 기준 `alt`+숫자 기능이 제한됩니다.</li>
+                <li>단시간에 반복 채팅을 치면 채팅 제한을 받을 수 있으니 주의해 주세요.</li>
+                <li>채팅창에서 먼저 이모티콘을 입력한 뒤 복사하여 원하는 텍스트칸에 붙여넣고 체크를 눌러 저장합니다. 이모티콘이 아닌 요소는 저장되어도 매크로가 동작하지 않습니다.</li>
+                <li>생방송 진입 후 이모티콘 창을 한 번도 열지 않은 상태라면 기능 동작 시 최초 1회 이모티콘 창이 열릴 수 있습니다.</li>
+                <li>자동 UP 버튼 기능이 켜져 있으면 동작 충돌이 날 수 있으니, UP 버튼 동작을 확인한 뒤 이모티콘 기능을 사용하는 것을 권장합니다.</li>
+              </ul>
+            </article>
+
+            <article class="ui-preview-item line-link">
+              <div class="ui-crop">
+                <img src="ui_detail_left.png" alt="OGQ 탭 좌측 UI">
+              </div>
+              <h3>OGQ 탭</h3>
+              <ul class="ui-detail-list">
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="ogq-slot" data-target-x="0.11" data-target-y="0.732">빈 이미지 칸을 클릭하면 분홍 테두리의 대기 상태가 되며, 한 번 더 누르면 취소됩니다. 대기 상태에서 숲 방송 채팅창 이모티콘을 클릭하면 저장되고 팝업이 닫혀 있어도 상태가 유지됩니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="ogq-check" data-target-x="0.91" data-target-y="0.732">텍스트칸에 단축어를 입력한 뒤 오른쪽 체크를 눌러 저장합니다.</li>
+                <li>채팅창에서 단축어 입력 시 연결된 OGQ가 제안됩니다. ESC로 취소해 일반 채팅으로 보낼 수 있고, ENTER로 OGQ 선택 후 한 번 더 ENTER하면 전송됩니다.</li>
+                <li>방송 진입 직후 최초 선택 시 이모티콘 창이 잠시 열릴 수 있습니다.</li>
+                <li>저장된 OGQ 또는 단축어를 바꾸려면 우측 상단 X를 눌러 삭제 후 다시 등록합니다. 이모티콘 탭 오른쪽 영역 클릭으로 OGQ 선택창에 바로 들어갈 수 있습니다.</li>
+              </ul>
+              <svg class="hotspot-svg" aria-hidden="true"></svg>
+            </article>
+
+            <article class="ui-preview-item line-link">
+              <div class="ui-crop">
+                <img src="ui_ogq_left.png" alt="세부 설정 탭 좌측 UI">
+              </div>
+              <h3>세부 설정 탭</h3>
+              <ul class="ui-detail-list">
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-alarm" data-target-x="0.865" data-target-y="0.058">알람 켜짐 유지를 끄면 뱅온 후 해당 방송인의 스위치가 자동으로 꺼집니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-player" data-target-x="0.865" data-target-y="0.126">플레이어 활성화는 디시인사이드의 숲 플레이어, X(구 트위터), 사운드클라우드, 인스타그램 URL을 embed로 변환해 상호작용할 수 있도록 합니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-cafe" data-target-x="0.865" data-target-y="0.195">카페공지 포함을 활성화하면 이세돌 최신 공지 5개 표시 시 카페 공지까지 포함하여 최신 5개로 표시됩니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-heart" data-target-x="0.865" data-target-y="0.265">하트포인트 기능 ON/OFF를 제어할 수 있으며, 포인트 박스와 시청 외 포인트 수급 관련 동작에 영향을 줍니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-custom" data-target-x="0.38" data-target-y="0.418">체크박스로 커스텀 유저 기능을 켤 수 있습니다. 최소 1명에서 최대 4명까지 추가 가능하고, 고정한 유저도 언제든 삭제 후 다른 ID로 변경 가능합니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-up" data-target-x="0.575" data-target-y="0.515">생방송 진입 시 자동으로 UP 버튼을 누르는 기능을 켤 수 있습니다. 진입 후 몇 초 뒤 동작하며, 예약기가 실입장하지 않은 방송에도 적용되고 자정이 넘으면 자동으로 한 번 더 누릅니다.</li>
+                <li class="hotspot-trigger" tabindex="0" data-hotspot="detail-overflow" data-target-x="0.705" data-target-y="0.732">동시에 4개 이상 생방송이 열릴 때 반응을 미리 정할 수 있습니다. 무시/키지않음/다른 탭 종료 옵션에 따라 창 열기 및 기존 탭 종료 방식이 달라집니다.</li>
+              </ul>
+              <svg class="hotspot-svg" aria-hidden="true"></svg>
+            </article>
+          </div>
+        </div>
+        <div class="ui-slider-controls">
+          <button type="button" class="ui-slider-arrow prev" data-slider-prev aria-label="이전 미리보기">이전</button>
+          <div class="ui-slider-pagination" aria-label="미리보기 페이지"></div>
+          <button type="button" class="ui-slider-arrow next" data-slider-next aria-label="다음 미리보기">다음</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="tab4" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-4" hidden>
+    <article class="card heart-hero">
+      <h2>하트포인트</h2>
+      <p>하트포인트는 방송 시청과 참여로 모을 수 있는 포인트입니다. 포인트를 모으려는 방송에 들어간 뒤 채팅창 상단 포인트 박스에서 시작 버튼을 눌러야 적립이 시작됩니다.</p>
+      <div class="heart-icons">
+        <span><img src="beat_heart.webp" alt="기본 하트">주기 적립</span>
+        <span><img src="shake_heart.webp" alt="보너스 하트">보너스 하트</span>
+        <span class="heart-start-chip"><img src="heart_start.webp" alt="시작 버튼">시작 버튼 필수</span>
+      </div>
+    </article>
+
+    <div class="heart-grid">
+      <article class="card">
+        <h3>획득 방법 4가지</h3>
+        <ol>
+          <li>방송 시청 중 주기적으로 포인트 획득</li>
+          <li>움직이는 하트 클릭 시 보너스 포인트 획득</li>
+          <li>채팅 작성 시 포인트 획득</li>
+          <li>구독권 선물 시 포인트 획득</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h3>구독 상태에 따른 차이</h3>
+        <p>주기 적립 포인트는 비구독자/1티어/2티어 및 구독 개월 수에 따라 차이가 있습니다. 장기 구독 1티어는 신규 2티어보다 더 많은 포인트를 받을 수도 있습니다.</p>
+        <p>채팅과 보너스 하트는 구독 여부에 관계없이 동일 기준이며, 추후 밸런스 조정이 있을 수 있습니다.</p>
+      </article>
+
+      <article class="card">
+        <h3>경쟁과 특전</h3>
+        <p>하트포인트는 배팅 기능 대신 누적/7일/30일 랭킹으로 경쟁할 수 있습니다. 10만 포인트 달성 시 뱅온 예약기 특전이 지급되며, 방송인별 왁세돌 특전을 모을 수 있습니다.</p>
+        <a href="https://idkwtsay.github.io/rankpage/ranking/" class="cta-link" target="_blank" rel="noopener noreferrer">리더보드 바로가기</a>
+      </article>
+
+      <article class="card warning-card">
+        <h3>유의 사항</h3>
+        <p>과도하거나 반복적인 채팅은 제재 사유가 될 수 있습니다.</p>
+        <p>리더보드는 1시간 단위로 업데이트되며, 서버 동기화 시점에 따라 내 점수 반영은 더 늦을 수 있습니다.</p>
+        <p>ON 옵션은 포인트 박스가 마우스에 반응하지 않을 때만 권장합니다. 최상단 요소로 올라가며 일부 UI와 겹쳐 보일 수 있습니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="tab2" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-2" hidden>
+    <div class="faq-list">
+      <article class="faq-item card">
+        <button type="button" class="faq-question" aria-expanded="false">
+          파이어폭스를 사용 중인데 영상이 멈춘 상태로 열립니다.
+        </button>
+        <div class="faq-answer" hidden>
+          <p>파이어폭스는 자동재생 허용 설정이 필요합니다. 브라우저 설정 &gt; 개인정보 및 보안 &gt; 권한 &gt; 자동 재생에서 모든 웹 사이트 기본값을 허용으로 바꾸거나, 숲 URL만 허용해 주세요.</p>
+          <div class="faq-actions">
+            <button type="button" class="preview-btn" data-image-src="image009.png" data-image-alt="파이어폭스 자동재생 기본값 허용 화면">기본값 허용 예시</button>
+            <button type="button" class="preview-btn" data-image-src="image011.png" data-image-alt="특정 URL 자동재생 허용 화면">URL별 허용 예시</button>
+          </div>
+          <p>설정 메뉴를 열지 않아도, 숲 생방송 주소창 왼편의 재생 금지 아이콘에서 해당 URL의 권한을 직접 바꿀 수 있습니다.</p>
+          <div class="faq-actions">
+            <button type="button" class="preview-btn" data-image-src="image012.png" data-image-alt="재생 금지 아이콘 위치">재생 금지 아이콘 보기</button>
+            <button type="button" class="preview-btn" data-image-src="image013.png" data-image-alt="URL 권한 변경 화면">URL 권한 변경 보기</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="faq-item card">
+        <button type="button" class="faq-question" aria-expanded="false">
+          이세돌 뱅온 예약기가 랙을 유발할 수 있나요?
+        </button>
+        <div class="faq-answer" hidden>
+          <p>일반적으로 그렇지 않습니다. 기본 동작은 1분마다 짧게 수십 KB 수준의 정보만 확인합니다. 생방송 시청 중에는 매크로 사용, UP 버튼 동작 같은 짧은 시점에만 관여하며 화면 정보를 실시간으로 읽고 쓰지 않습니다.</p>
+          <p>팝업창은 정보량이 많아 일반 확장프로그램보다 무거울 수 있지만, 대부분의 환경에서는 사용에 지장을 줄 정도의 랙을 만들지 않습니다.</p>
+        </div>
+      </article>
+
+      <article class="faq-item card">
+        <button type="button" class="faq-question" aria-expanded="false">
+          방송창이 열릴 때 일시정지 상태에서 열립니다.
+        </button>
+        <div class="faq-answer" hidden>
+          <p>아래 주소를 열어 `https://play.sooplive.co.kr`의 MEI 점수(`Score`, `Is High`)를 확인해 주세요. `Is High`가 `No`이면 자동재생 제한에 걸린 상태입니다.</p>
+          <div class="faq-actions">
+            <button type="button" class="copy-link" data-url="chrome://media-engagement/">chrome://media-engagement/ 복사</button>
+            <button type="button" class="copy-link" data-url="edge://media-engagement/">edge://media-engagement/ 복사</button>
+          </div>
+          <p>새 브라우저/새 PC/쿠키 초기화 이후에는 점수가 다시 낮아질 수 있습니다. 생방송이나 VOD를 여러 번 시청하면 제한이 자연스럽게 완화됩니다.</p>
+        </div>
+      </article>
+
+      <article class="faq-item card">
+        <button type="button" class="faq-question" aria-expanded="false">
+          방송창이 열리지 않습니다.
+        </button>
+        <div class="faq-answer" hidden>
+          <p>뱅온 예약기는 1분 주기로 상태를 확인하기 때문에 감지 시점이 최대 1분 이상 지연될 수 있습니다. 뱅온 후 2~3분이 지나도 동작하지 않으면 팝업 설정을 먼저 점검해 주세요.</p>
+          <p>특히 대상 방송인의 알림 스위치, 동시 방송 3개 이상 켜짐 방지 설정 여부를 확인해 주세요. 설정이 정상인데도 문제가 지속되면 브라우저 재실행 또는 확장프로그램 재설치를 권장합니다.</p>
+          <p>이미 어떤 방식으로든 한 번 진입했던 방송은 저장되어 중복 진입 방지를 위해 다시 열지 않습니다. 해결되지 않으면 `roman100j12@gmail.com`으로 문의해 주세요.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="tab3" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-3" hidden>
+    <div class="update-list">
+      <article class="log-item card">
+        <h3>v3.1.1</h3>
+        <p>구독권 선물 기능 버그 수정</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v3.1.0</h3>
+        <ul>
+          <li>구독권 선물 기능 추가 (세부설정에서 해제 가능, 하트포인트박스 우측)</li>
+          <li>하트포인트 활성화 상태일 때 원하지 않는 방송은 영구 비활성화 가능</li>
+          <li>방송 드롭스 활성화 시 포인트박스 위치를 우측으로 이동</li>
+          <li>서버 업로드 주기 단축 및 포인트 갱신 없을 시 업로드 스킵</li>
+          <li>숲 업데이트에 따라 멀티뷰 인원수 최대 4인으로 조정</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v3.0.3</h3>
+        <ul>
+          <li>한 탭 내 방송 이동 시 포인트박스 방송인 미반영 문제 해결</li>
+          <li>하트포인트 수급량 조절 (구독 개월 보너스 하향, 채팅 구간별 차등)</li>
+          <li>명예의전당 페이지 신설 (한 달 상승분 기준 분야별 1위)</li>
+          <li>파이어폭스 버전 배포</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v3.0.2</h3>
+        <ul>
+          <li>스크린모드에서 포인트박스 포지션 문제 해결</li>
+          <li>하트포인트 수급량 하향 (획득 간격 증가, 채팅 수급량 절반)</li>
+          <li>동기화 저장소 데이터 백업/다운로드 기능 추가</li>
+          <li>포인트 업로드/다운로드 주기 단축 (유지비 이슈로 추후 조정 가능)</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v3.0.1</h3>
+        <ul>
+          <li>하트포인트 z-index 상향 옵션 추가</li>
+          <li>전체화면 종료 시 즉시 리포지셔닝</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v3.0.0</h3>
+        <ul>
+          <li>하트포인트 신설</li>
+          <li>리더보드 페이지 작성</li>
+          <li>버그 수정</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.5.0</h3>
+        <ul>
+          <li>OGQ 단축어 매크로 기능 추가</li>
+          <li>축하창 기능 추가</li>
+          <li>FAQ 페이지 작성</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.4.4</h3>
+        <ul>
+          <li>뱅온 우선순위 설정 가능 (최대 3명, 스위치 한 번 더 눌러 설정)</li>
+          <li>세부설정에서 다른 탭 종료 시 적용</li>
+          <li>사용설명서 페이지 가독성 개선</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.4.3</h3>
+        <p>UP 버튼 클릭 기능 세분화 (우왁굳/이세돌/커스텀 방송만 선택 가능)</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.4.2</h3>
+        <ul>
+          <li>alt 키 차단 기능 추가</li>
+          <li>X embed 기능 최신화</li>
+          <li>업데이트 안내 방식 개선</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.4.1</h3>
+        <p>이모티콘 기능 에러 대응</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.4.0</h3>
+        <ul>
+          <li>이모티콘 관련 기능 추가</li>
+          <li>이스터에그 4개 추가 및 기존 이스터에그 개선</li>
+          <li>UI 개선</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.3.1</h3>
+        <ul>
+          <li>폰트변경 기능 추가</li>
+          <li>멀티뷰 초과 시 반응 추가</li>
+          <li>공지사항 기능 추가</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.3.0</h3>
+        <ul>
+          <li>이스터에그 추가</li>
+          <li>커스텀 ID 기능 추가</li>
+          <li>썸네일 미리보기 추가</li>
+          <li>UP 버튼 자동클릭 기능 추가</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.2.0</h3>
+        <p>숲 전환 대응</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.1.2</h3>
+        <ul>
+          <li>데이터베이스 리딩 방식 변경</li>
+          <li>안 읽은 공지 표식 추가</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.1.0 (신규 UI)</h3>
+        <ul>
+          <li>전체 UI 개선 및 탭 기반 설정 분리</li>
+          <li>왁물원 공지(최근 5개) 데이터베이스 연동, 30분 단위 최신화</li>
+          <li>방송 중 프로필 표시, 제목 툴팁, 클릭 진입 기능 추가</li>
+          <li>이스터에그 2종 추가</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.1.0</h3>
+        <p>데이터베이스 리딩 방식 변경</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.0.2</h3>
+        <p>뱅온정보 읽기 방식을 실시간 구독형에서 스케줄형으로 변경</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v2.0.0</h3>
+        <ul>
+          <li>뱅온정보 제공 기능 도입 (왁물원 공지와 연동, 신호등 아이콘 표시)</li>
+          <li>신호 아이콘 hover 시 툴팁 제공</li>
+          <li>스위치 ON 상태를 초록색으로 표시해 직관성 개선</li>
+          <li>설정값 저장 방식 개선 (업데이트/재시작 후 유지)</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v1.21</h3>
+        <ul>
+          <li>X를 변환 목록에 추가</li>
+          <li>아프리카 VOD 캐치 판별 방식 개선 (URL 비의존)</li>
+          <li>iframe 사이즈 직접 조절 기능 추가</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v1.20</h3>
+        <ul>
+          <li>글의 모든 URL 변환 지원 (URL당 1회)</li>
+          <li>아프리카 VOD 외 인스타그램/사운드클라우드 링크 변환 지원</li>
+          <li>아프리카 catch 변환 실패 문제 해결</li>
+        </ul>
+      </article>
+
+      <article class="log-item card">
+        <h3>v1.11</h3>
+        <p>미갤이 포함되지 않았던 오류 수정</p>
+      </article>
+
+      <article class="log-item card">
+        <h3>v1.1</h3>
+        <p>디시인사이드에서 아프리카TV VOD 링크를 플레이어로 자동 전환하는 기능 추가</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer card">
+    <a href="https://youtu.be/fgSXAKsq-Vo?si=cuCOvIsEu9eP6RYe" class="media-button" target="_blank" rel="noopener noreferrer" aria-label="추천 영상 열기">
+      <img src="sixsedol.webp" alt="추천 영상">
+    </a>
+    <p class="footer-contact">버그 제보 및 문의: <a href="mailto:roman100j12@gmail.com">roman100j12@gmail.com</a></p>
+  </footer>
+</main>
+
+<div id="image-modal" class="image-modal" aria-hidden="true">
+  <div class="image-modal-backdrop" data-close-modal></div>
+  <div class="image-modal-dialog" role="dialog" aria-modal="true" aria-label="설명 이미지 미리보기">
+    <button type="button" class="modal-close" data-close-modal>닫기</button>
+    <img id="modal-image" src="" alt="설명 이미지">
   </div>
 </div>
-	<div id="tab4" class="tab-content" style="display: none;">
-		<div class="title-update"><img src="judon.png" alt="judon" class="judon">
-      하트포인트
-    </div>
-		<div class="heartpoint-content">
-		<p><img src="beat_heart.webp" alt="heart_basic" style="width: 20px;">하트포인트는 방송시청과 참여로 모을수 있는 포인트입니다.<br>
-			포인트를 모으기 원하는 방송에 들어갔다면 채팅창 상단에 있는 포인트박스에서 시작버튼을 눌러주세요.<img src="heart_start.webp" alt="heart_start" style="width: 120px; position: absolute"><br>
-			시작버튼을 누르지 않으면 해당 방송에서는 포인트가 모이지 않습니다.</p>
-		<p>현재 포인트 획득 방법은 네 가지가 있습니다.<br>
-		1. 방송시청시 주기적으로 포인트를 획득합니다.<br>
-		2. 가끔 하트아이콘이 활발히 움직일때<img src="shake_heart.webp" alt="heart_shake" style="width: 20px;"> 하트를 클릭하면 다량의 보너스 포인트를 획득합니다.<br>
-		3. 채팅을 칠때마다 포인트를 획득합니다.<br>
-		4. 구독권을 선물할때 포인트를 획득합니다.</p>
-		
-		<p>주기적으로 획득하는 포인트는 구독자와 비구독자 사이에 차이가 있습니다. 1티어 구독과 2티어 구독사이에도 차이가 있으며 구독개월 수가 늘어날수록 미량의 포인트를 더 획득합니다.<br>1티어 구독자라도 3년 이상의 장기구독자라면 이제 막 시작한 2티어 구독자보다 더 많은 포인트를 획득할 수 있습니다.</p>
-		<p>비구독자라도 채팅을 열심히 친다면 충분히 따라잡는게 가능합니다. 채팅과 보너스 포인트는 구독자와 비구독자 사이에 차등이 없습니다. (추후 밸런스가 조정될 수도 있습니다)
-			<br><span style="color: red;">과도한 혹은 지나치게 반복적인 채팅은 채팅제재의 사유가 될 수있습니다.</span></p>
-			
-			<p>하트포인트는 트위치 채널포인트와같은 배팅기능을 지원하진 않습니다.<br>
-		대신해서, 누가 더 활발히 방송에 참여해 더 많은 포인트를 모았는가 <strong>경쟁</strong>이 가능합니다.<br>
-		누적포인트 이외에도 7일, 30일 랭킹을 산출해, 후발주자도 경쟁에 참여가 가능하게 했습니다.</p>
-		
-		<p>또한 10만포인트 달성시 뱅온예약기에서 사용가능한 소소한 특전이 지급되며, 이세돌과 우왁굳님 방송에는 각기 다른 왁세돌 특전이 있습니다.<br>
-		7개의 왁세돌 특전을 모두 모아보세요.</p>
-			
-		<p>리더보드는 1시간에 한번씩 업데이트 됩니다. 다만, 사용자와 서버 데이터베이스간 업데이트가 실시간이 아니며, 리더보드에 내 점수가 갱신되는 시간은 더 오래 걸릴 수 있습니다.</p>
-		<p>박스 클릭안될시 ON 옵션은 포인트박스가 마우스에 반응하지 않을때만 키는걸 추천드립니다. 포인트박스를 최상단 요소로 만드는 옵션이라 프로필 스크롤을 내렸을때 겹쳐보일 수 있습니다.</p>
-	<a href="https://idkwtsay.github.io/rankpage/ranking/" target="_blank" rel="noopener noreferrer"><span style="cursor: pointer; color: blue; text-decoration: underline; position: absolute; font-size: 20px;">리더보드 바로가기</span></a>
-		
-	</div>	
-	</div>
-<div id="tab2" class="tab-content" style="display: none;">
-    <div class="title-update"><img src="judon.png" alt="judon" class="judon">
-        F A Q
-    </div>
-    <div class="faq">
-        
-        <div class="faq-item">
-            <div class="faq-title">파이어폭스를 사용중인데 영상이 멈춘채 열립니다.</div>
-            <div class="faq-content">
-                파이어폭스에서 뱅온 예약기의 원활한 사용을 위해서는 자동재생 설정이 필요합니다. 브라우저 설정 - 개인정보 및 보안 - 권한에서 자동 재생항목을 들어가
-                <span class="image-hover-trigger" data-image-src="image009.png">모든 웹 사이트의 기본값을 허용</span>으로 바꿔주던지
-                <img src="image009.png" alt="image009" style="width: 230px; display: none;">
-                혹은 숲 주소를 입력후
-                <span class="image-hover-trigger" data-image-src="image011.png">해당 url에만 오디오 및 비디오 허용</span>으로 바꿔주시기 바랍니다.
-                <img src="image011.png" alt="image011" style="width: 340px; display: none;">
-                <br>설정창에 들어가지 않고도 변경이 가능한데, 숲 생방송 진입시, 주소창 왼편에
-                <span class="image-hover-trigger" data-image-src="image012.png">이와같이 <strong>재생 금지 아이콘</strong></span>이 떠있을수 있습니다(자물쇠 오른쪽)
-                <img src="image012.png" alt="image012" style="width: 100px; display: none;">
-                <br>이를 클릭하여
-                <span class="image-hover-trigger" data-image-src="image013.png">해당 url에 대한 설정을 변경</span>할 수도 있습니다.
-                <img src="image013.png" alt="image013" style="width: 230px; display: none;">
-            </div>
-        </div>
 
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-        <div class="faq-item">
-            <div class="faq-title">이세돌 뱅온 예약기가 랙을 유발할 수 있나요?</div>
-            <div class="faq-content">일반적으로 그렇지 않습니다. 기본 동작은 1분에 한번 매우 짧은 시간 동안 수십 KB 정도의 정보를 받고 확인하는게 끝입니다. 생방송을 시청하는 와중에도, 매크로 기능을 사용할때나 UP버튼을 누를때 같은 기능이 동작하는 짧은 순간에만 관여하며, 화면 내 정보를 실시간으로 읽거나 쓰지 않습니다. 다만 팝업창의 경우 정보량이 많아서 일반적인 확장프로그램의 팝업보다 무거울 수 있습니다. 하지만 대부분의 환경에서 랙을 유발할 정도는 아니며 있다 하더라도 컴퓨터와 인터넷 사용에는 지장없이, 팝업창을 열때에 약간의 지연만 있을 뿐입니다.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-title">방송창이 열릴때 일시정지 상태에서 열립니다.</div>
-            <div class="faq-content">크롬의 경우   <a href="#" class="copy-link" data-url="chrome://media-engagement/">chrome://media-engagement/</a>(클릭하여 복사한뒤, 주소창에 넣고 엔터를 눌러주세요) <br> 엣지의 경우   <a href="#" class="copy-link" data-url="edge://media-engagement/">edge://media-engagement/</a> 를 열어보세요. <br> 하단 Origin열에서 https://play.sooplive.co.kr를 찾아서 Score와 Is High를 보시기 바랍니다. 크롬은 기본적으로 가본적없는 사이트에 들어갔을 때 조작없이는 영상이 재생되지 않도록 자동 재생 제한정책을 두고 있습니다. 해당 사이트에 들어가서 수 분 이상의 영상 시청을 여러번 꾸준히 했을 경우에만 신뢰할 수 있는 사이트로 등록되어 자동 재생이 허용됩니다. 이 점수가 낮을 경우 <br>(Is High가 No일 경우) 뱅온 예약기가 연 방송이 아니라 아무 숲 생방송에서든 새로고침을 했을경우 똑같이 영상이 재생되지 않는것을 확인할 수 있습니다.	생방송이나 VOD를 여러편 시청하면 자연스럽게 제한이 해제되며, 새로운 컴퓨터로 접속, 새로운 브라우저로 접속, 혹은 컴퓨터 포멧, 브라우저의 쿠키 초기화시에 이 점수(MEI)도 같이 초기화 될 수 있으니 이 경우에 며칠정도 불편을 참아주시면 감사하겠습니다.</div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-title">방송창이 열리지 않습니다.</div>
-            <div class="faq-content">이세돌 뱅온 예약기는 1분에 한번씩 방송상태를 확인합니다. 즉, 빠르면 1,2초만에도 뱅온을 감지하지만 길면 뱅온 후 1분이 지나서야 뱅온을 감지합니다. 하지만, 브라우저 상태나 환경에 따라 간혹 1분을 넘기는 경우도 존재할 수 있습니다. 만약 뱅온후 2~3분이 지났는데 뱅온 예약기가 동작하지 않았다면, 우선 팝업창을 열어 설정을 확인하시고, (해당 이세돌의 뱅온 알람이 켜져있는지와, 3개 이상의 생방송이 켜져있을때 켜짐 방지가 되어있지 않은지) 설정이 제대로 되어있는데 동작하지 않았다면, 추후 크롬을 껐다켜보거나 그래도 고쳐지지 않을 경우 뱅온예약기를 삭제 후 재설치 하시는 방법을 권장드립니다. 더해서 만약 해당 방송을 어떤 방식으로든 한 번이라도 들어갔다가 나왔던경우, 이미 진입한 방송으로 저장되어 창을 열지 않습니다. 이는 오동작이 아닙니다. <br>해결이 되지 않는다면, roman100j12@gmail.com 로 연락주시면 최대한 도와드리겠습니다.</div>
-        </div>
-    </div>
-</div>
-
-<div id="image-popup-container"></div>
-	
-	
-	<div id="tab3" class="tab-content" style="display: none;">
-		<div class="title-update"><img src="judon.png" alt="judon" class="judon">
-      업데이트 내역
-    </div>
-	<div class="update-list">
-    <p>
-      <strong>v3.1.1</strong><br>
-      ▶구독권 선물 기능 버그 수정
-    </p>
-	<p>
-      <strong>v3.1.0</strong><br>
-      ▶구독권 선물 기능 추가. 세부설정에서 해제 가능 (하트포인트박스 우측에 위치함)<br>
-      ▶하트포인트 활성화 상태일때 원하지 않는 방송에서는 아예 비활성화 시킬 수 있게됨 (포인트 수급 시작전에만 가능하며 비활성화는 영구적)<br>
-      ▶방송에서 드롭스가 활성화되었을시 포인트박스 위치 우측으로 당김<br>
-	  ▶서버 업로드 주기를 단축 및 포인트 갱신이 없을시 업로드 스킵<br>
-      ▶숲 업데이트에따라 멀티뷰 인원수 최대4인으로
-    </p>
-	<p>
-      <strong>v3.0.3</strong><br>
-      ▶한 탭내에서 방송이동시 포인트박스가 방송인에 따라 바뀌지 않던 문제 해결<br>
-      ▶하트포인트 수급량 조절 (구독자 개월 보너스 너프, 채팅 포인트 구간별로 상이하게 설정)<br>
-      ▶명예의전당 페이지 신설, 한달동안의 포인트 상승분만을 토대로 각 분야 1위 선정<br>
-      ▶파이어폭스 버젼 배포
-    </p>
-    <p>
-      <strong>v3.0.2</strong><br>
-      ▶스크린모드에서 포인트박스 포지션 문제 해결<br>
-      ▶하트포인트 수급량 너프 (획득 간격 소폭 상승, 채팅 수급량 절반으로 줄임)<br>
-      - 의도했던 최대 하루 수급량보다 훨씬 많은 하루만에 10만포인트를 달성하시는 분이 몇 분있어 너프가 필요하다 판단했습니다.<br>
-      ▶동기화 저장소에 데이터 백업과 다운로드 기능추가 (반응성을 위해서 로컬을 메인으로 하는건 그대로)<br>
-      ▶포인트 업로드 다운로드 주기 단축 (유지 비용문제와 관련된 안건이라 추후 다시 늘어날 수도 있습니다.)
-    </p>
-	<p>
-      <strong>v3.0.1</strong><br>
-      ▶하트포인트 zindex올리는 옵션추가<br>
-      ▶전체화면에서 나올시 바로 리포지셔닝
-    </p>
-    <p>
-      <strong>v3.0.0</strong><br>
-      ▶하트포인트 신설<br>
-      ▶리더보드 페이지 작성<br>
-      ▶버그 수정
-    </p>
-	<p>
-      <strong>v2.5.0</strong><br>
-      ▶OGQ단축어 매크로 기능이 추가되었습니다.<br>
-      ▶축하창 기능이 추가되었습니다.<br>
-      ▶FAQ페이지가 작성되었습니다.
-    </p>
-		
-    <p>
-      <strong>v2.4.4</strong><br>
-      ▶뱅온 우선순위 설정이 가능해졌습니다. 최대 3명의 방송인까지 스위치를 한번 더 눌러 설정가능합니다.<br>
-      -세부설정에서 다른탭종료시 적용됩니다.<br>
-      ▶사용설명서 페이지를 읽기 편하게 재작성했습니다.
-    </p>
-    
-    <p>
-      <strong>v2.4.3</strong><br>
-      ▶up버튼 클릭 기능 세분화, 우왁굳, 이세돌, 커스텀 방송만 up버튼을 누르게 설정이 가능해졌습니다.
-    </p>
-    
-    <p>
-      <strong>v2.4.2</strong><br>
-      ▶alt키 차단기능 추가<br>
-      ▶X embed기능 최신화<br>
-      ▶업데이트 안내방법 개선
-    </p>
-    
-    <p>
-      <strong>v2.4.1</strong><br>
-      ▶이모티콘 기능 에러 대응
-    </p>
-    
-    <p>
-      <strong>v2.4.0</strong><br>
-      ▶이모티콘 관련 기능 추가<br>
-      ▶이스터에그 4개 추가 및 기존 이스터에그 개선<br>
-      ▶UI 개선
-    </p>
-    
-    <p>
-      <strong>v2.3.1</strong><br>
-      ▶폰트변경기능 추가<br>
-      ▶멀티뷰 초과시 반응추가<br>
-      ▶공지사항기능 추가
-    </p>
-    
-    <p>
-      <strong>v2.3.0</strong><br>
-      ▶이스터에그 추가<br>
-      ▶커스텀id기능 추가<br>
-      ▶썸네일 미리보기 추가<br>
-      ▶up버튼 자동클릭기능 추가
-    </p>
-    
-    <p>
-      <strong>v2.2.0</strong><br>
-      ▶숲 전환 대응
-    </p>
-    
-    <p>
-      <strong>v2.1.2</strong><br>
-      ▶데이터베이스 리딩방식 변경<br>
-      ▶안읽은공지에 표식 추가
-    </p>
-    
-    <p>
-      <strong>v2.1.0</strong><br>
-      ▶데이터베이스 리딩방식 변경
-    </p>
-    
-    <p>
-      <strong>v2.1.0</strong><br>
-      ▶UI를 전체적으로 개선했습니다. 글자 자간을 맞추고, 탭으로 설정들을 분리했습니다.<br>
-      ▶왁물원의 공지들을 데이터베이스에서 가져옵니다. 이세돌 공지 혹은 카페공지와 이세돌 공지를 합쳐서 최근 5개를 보여줍니다. (30분 단위로 최신화 됩니다.)<br>
-      ▶누군가 방송을 키면 프로필사진에 방송중인걸 알아볼 수 있게 표시되며 프로필 사진위로 마우스를 올리면 방송 제목이 뜨고 클릭하여 바로 방송에 들어가 볼 수 있습니다.<br>
-      ▶이스터에그 2개를 넣어놓았습니다.
-    </p>
-    
-    <p>
-      <strong>v2.0.2</strong><br>
-      ▶뱅온정보 읽기방식을 실시간 구독형에서 스케쥴형으로 변경
-    </p>
-    
-    <p>
-      <strong>v2.0.0</strong><br>
-      ▶뱅온정보 제공 기능을 도입했습니다. 왁물원에 뱅온정보가 올라올때 그에 맞춰 자동으로 뱅온정보가 제공되며 신호등 모양의 표시로 쉽게 인지할 수 있게 했습니다.<br>
-      - 신호아이콘 위로 마우스를 올리면 툴팁이 떠오릅니다.<br>
-      ▶슬라이드가 켜졌는지 꺼졌는지 구분하기 힘들다는 피드백을 받아 켜졌을때 버튼 스위치가 초록색으로 바뀌어 더 직관적으로 이해할 수 있게 하였습니다.<br>
-      ▶설정값 저장방식을 개선했습니다. 이제 업데이트가 되었거나 확장프로그램을 껐다가 키더라도 설정값은 유지됩니다.
-    </p>
-    
-    <p>
-      <strong>v1.21</strong><br>
-      ▶X도 변환목록에 추가했습니다.<br>
-      ▶아프리카vod 캐치 판별방법을 개선했습니다. url에 의존하지 않습니다.<br>
-      ▶iframe 사이즈를 직접 조절할 수 있게 했습니다.<br>
-      - url 앞에 붙여서 (500,500) 식으로 가로, 세로 사이즈를 지정할 수 있습니다. 없을 경우 기본사이즈로 출력됩니다. (일반적인 경우 굳이 조정할 필요 없습니다)
-    </p>
-    
-    <p>
-      <strong>v1.20</strong><br>
-      ▶글에서 하나의 url만 변환하던 것을 모든 url을 변환하게 업데이트 했습니다. (다만, 한 url당 한번만 변환됩니다.)<br>
-      ▶아프리카tv vod뿐만 아니라, 인스타그램, 사운드클라우드 링크도 적절하게 변환해줍니다.<br>
-      ▶아프리카tv catch를 제대로 변환하지 못했던 문제를 해결했습니다.
-    </p>
-    
-    <p>
-      <strong>v1.11</strong><br>
-      ▶미갤이 포함되지 않았던 오류를 수정했습니다.
-    </p>
-    
-    <p>
-      <strong>v1.1</strong><br>
-      ▶디시인사이드에서 아프리카tv vod링크를 자동으로 플레이어로 전환시켜주는 기능을 넣었습니다. 이제 디시인사이드에서도 편하게 클립이나 다시보기를 시청하세요.
-    </p>    
-</div>
-	</div>
-</div>
-	<div class="bottom">
-		<div class="bottom-section">몇 가지 이스터에그가 들어있습니다. 한 번쯤 찾아보시는 것도 재밌겠네요.</div>
-		<a href="https://youtu.be/fgSXAKsq-Vo?si=cuCOvIsEu9eP6RYe" target="_blank" rel="noopener noreferrer">
-    		<img src="sixsedol.webp" alt="sixsedol">
-		</a>
-		<div class="bottom-donation">버그제보 및 문의 : roman100j12@gmail.com</div>
-	</div>
-</body>
 <script src="manual_script.js"></script>
+</body>
 </html>
