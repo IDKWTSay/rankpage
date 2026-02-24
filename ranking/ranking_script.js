@@ -7,6 +7,7 @@ let isHofTransitioning = false;
 
 const GIST_URL = "https://gist.githubusercontent.com/IDKWTSay/e2779cfa06b34a78cc34f58e6efc6f64/raw/ranking_data.json";
 const GIST_HALL_URL = "https://gist.githubusercontent.com/IDKWTSay/fd313081b3d6eed272ee80b79dec313d/raw/hall_of_fame.json";
+const NOTICE_POPUP_ENABLED = false;
 
 (function preloadEmblems() {
     const preImg1 = new Image();
@@ -73,7 +74,7 @@ function createTables(id, streamerData, container) {
     const periodTablesContainer = document.createElement('div');
     periodTablesContainer.className = 'period-tables';
 
-    const periods = ['top_7_days', 'top_30_days', 'top_all_time'];
+    const periods = ['top_all_time', 'top_7_days', 'top_30_days'];
     const periodNames = {
         'top_7_days': '7일 랭킹',
         'top_30_days': '30일 랭킹',
@@ -157,6 +158,13 @@ function createTables(id, streamerData, container) {
                         const nicknameCell = row.querySelector('td:nth-child(3)');
                         nicknameCell.style.position = 'relative';
                         nicknameCell.style.overflow = 'visible';
+                        const nicknameText = nicknameCell.querySelector('span');
+                        if (nicknameText) {
+                            nicknameText.style.display = 'block';
+                            nicknameText.style.overflow = 'hidden';
+                            nicknameText.style.whiteSpace = 'nowrap';
+                            nicknameText.style.textOverflow = 'clip';
+                        }
                         nicknameCell.appendChild(diffSpan);
 
                         row.addEventListener('mousemove', () => {
@@ -193,7 +201,7 @@ function addStreamerBanners() {
     bannerContainer.className = 'streamer-banners';
     bannerContainer.style.position = 'absolute';
     bannerContainer.style.left = '-18%';
-    bannerContainer.style.bottom = '-40px';
+    bannerContainer.style.bottom = '-34px';
     bannerContainer.style.display = 'flex';
     bannerContainer.style.justifyContent = 'center';
     bannerContainer.style.gap = '15px';
@@ -423,8 +431,8 @@ function createHallOfFameTable(data) {
 						
 						const [yyyy, mm] = cellData.split('-');
 						const monthNames = [
-							'January', 'February', 'March', 'April', 'May', 'June',
-							'July', 'August', 'September', 'October', 'November', 'December'
+							'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+							'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'
 						];
 						const monthIndex = parseInt(mm, 10) - 1;
 
@@ -513,7 +521,6 @@ async function showHallOfFame() {
     const searchSection = document.querySelector('.search-section');
     const honorWrapper = document.querySelector('.honor-wrapper');
     const tablesContainer = document.getElementById('tables-container');
-    const streamerBanners = mainSection?.querySelector('.streamer-banners');
     const startTime = performance.now();
 
     if (!mainSection || !searchSection || !honorWrapper || !tablesContainer) {
@@ -525,8 +532,6 @@ async function showHallOfFame() {
     honorWrapper.classList.add('fade-out');
     mainSection.classList.add('slide-out-left');
     searchSection.classList.add('slide-out-right');
-    tablesContainer.innerHTML = '';
-    if (streamerBanners) streamerBanners.remove();
 
     let overlay = document.getElementById('black-overlay');
     if (!overlay) {
@@ -534,6 +539,7 @@ async function showHallOfFame() {
         overlay.id = 'black-overlay';
         document.body.appendChild(overlay);
     }
+    overlay.classList.remove('soft-visible');
     requestAnimationFrame(() => {
         overlay.classList.add('visible');
     });
@@ -560,27 +566,27 @@ async function showHallOfFame() {
     });
 
     const hallOfFameDataPromise = fetchHallOfFameData();
+    const minimumBlackTime = 6000;
+    await new Promise(resolve => {
+        const timeElapsed = performance.now() - startTime;
+        const waitTime = Math.max(0, minimumBlackTime - timeElapsed);
+        setTimeout(resolve, waitTime);
+    });
 
-    const fadeOutStartTime = 5500;
-    const timeUntilFadeOut = Math.max(0, fadeOutStartTime - (performance.now() - startTime));
-    const fadeOutTimeout = setTimeout(() => {
+    try {
+        const hallOfFameData = await hallOfFameDataPromise;
+
         if (emblem) {
             emblem.style.opacity = '0';
         }
-    }, timeUntilFadeOut);
 
-    const minimumWaitTime = 6000;
-    try {
-        const [hallOfFameData, _] = await Promise.all([
-            hallOfFameDataPromise,
-            new Promise(resolve => {
-                const timeElapsed = performance.now() - startTime;
-                const waitTime = Math.max(0, minimumWaitTime - timeElapsed);
-                setTimeout(resolve, waitTime);
-            })
-        ]);
-
-        clearTimeout(fadeOutTimeout);
+        // 표가 나타나는 시점에 원래 화면을 다시 보여줍니다.
+        overlay.classList.remove('visible');
+        overlay.classList.add('soft-visible');
+        mainSection.classList.remove('slide-out-left');
+        searchSection.classList.remove('slide-out-right');
+        honorWrapper.classList.remove('fade-out');
+        honorWrapper.style.pointerEvents = 'auto';
 
         if (emblem) {
             emblem.remove();
@@ -605,6 +611,7 @@ async function showHallOfFame() {
     } catch (error) {
         console.error("명예의 전당 처리 중 오류:", error);
         if (emblem) emblem.remove();
+        if (overlay && overlay.parentNode) overlay.remove();
 
         const errorMsg = document.createElement('div');
         errorMsg.id = 'hof-error-message';
@@ -617,7 +624,7 @@ async function showHallOfFame() {
     } finally {
         setTimeout(() => {
             isHofTransitioning = false;
-        }, 1200);
+        }, 500);
     }
 }
 
@@ -669,6 +676,7 @@ function hideHallOfFame() {
         honorWrapper.style.transition = `opacity ${returnDurationSec} ease`;
 
         overlay.classList.remove('visible');
+        overlay.classList.remove('soft-visible');
         mainSection.classList.remove('slide-out-left');
         searchSection.classList.remove('slide-out-right');
         honorWrapper.classList.remove('fade-out');
@@ -705,18 +713,22 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 
 	if (noticePopup && closeNoticeBtn && dontShowAgainCheckbox) {
-			if (getCookie(noticeCookieName) !== 'true') {
-				noticePopup.style.display = 'block';
-			} else {
-				noticePopup.style.display = 'none';
-			}
+            if (!NOTICE_POPUP_ENABLED) {
+                noticePopup.style.display = 'none';
+            } else {
+			    if (getCookie(noticeCookieName) !== 'true') {
+				    noticePopup.style.display = 'block';
+			    } else {
+				    noticePopup.style.display = 'none';
+			    }
 
-			closeNoticeBtn.addEventListener('click', function() {
-				noticePopup.style.display = 'none';
-				if (dontShowAgainCheckbox.checked) {
-					setCookie(noticeCookieName, 'true', 365);
-				}
-			});
+			    closeNoticeBtn.addEventListener('click', function() {
+				    noticePopup.style.display = 'none';
+				    if (dontShowAgainCheckbox.checked) {
+					    setCookie(noticeCookieName, 'true', 365);
+				    }
+			    });
+            }
 
 
     try {
@@ -728,8 +740,8 @@ document.addEventListener('DOMContentLoaded', async function() {
                 banner.innerHTML = '';
 
                 const timeSpan = document.createElement('span');
+                timeSpan.className = 'updated-time-chip';
                 timeSpan.textContent = `갱신시간: ${updatedTime}`;
-                timeSpan.style.cssText = "display: block; margin-top: 1vh; margin-left: 1.5vw; font-size: 15px; color: black;";
 
                 const announcement = document.createElement('span');
                 announcement.textContent = "방송 당일 포인트를 업데이트하지 못한 채 브라우저가 종료된 경우, 다음 날 브라우저를 실행하면 업데이트가 될 수 있습니다.\n이로 인해 리더보드 갱신이 다음 날 이루어질 수도 있습니다.";
@@ -737,15 +749,15 @@ document.addEventListener('DOMContentLoaded', async function() {
 
                 const countingImg = document.createElement('img');
 				countingImg.src = 'https://hits.sh/hits.sh/idkwtsay.github.io/rankpage/ranking.svg?view=today-total&style=for-the-badge&label=%EB%B0%A9%EB%AC%B8%EC%88%98&color=575757&labelColor=ec7b9a&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8%2F9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD80lEQVQ4yy1TeUybZRh%2F0c2YaMY2FkoPQIFytV9LKb2oXDvYIFyrY0NhS43ARDZgQ%2Bix9uv39YBeMI3ihIHMBTNmAopmbMk2FFkNC26oQ2VCpokbi0dMjPFq%2B72PL8Q%2F3uTJm%2Bd3PckP0TSNnE4W%2Bf0%2BFOwLbsx2ux2xLifq8fYgT28PYv%2F%2Fo%2B10DMsyyNPj3thzOBwIuciiyWTJKNbvm6k1PO8%2Bdcqe5vZ4EG21J3W0thecPNahd9jsQk%2BPB7ncbgJitr5yoivfbLKkMoQM%2BQNedNBQHxDEpcNTCVlQJC%2F5rUpXFsoTyf7QiSiQbheDOinn99rCyllDSc1Meor8QdyTIqjae%2BC9YF8AoUDQj%2FbtrhrLEMoixZn6v1R8CaQ9kQhlYjUcK6zhxLEpnCI%2BC%2BRxYtDy5aAQUjj2cR6385my6dOv9hMHQR%2BqrTjYrxHkgFZIhZUJWdHMbanR7pJabNl9CGdsTcVqAcWphFRULSIiycp%2FdIkqXLHXMOLzexFibDS1M1u%2FkktUlAnZURWf4rK3p2FP1QvYVWnEkjgxVgkonMeXEiIZpxZS%2F%2Br5CmhpeIlxkWMib8D3WNP%2BIwMaHgVakTysEckIKBUclUYYqO8ABU8CahJrPRoBY62ICqt2ZEJj9eHzveR%2B6wToSGndR5p4KeQn50Y0fAmWxaVBs74aJtucUJCUA%2FmJ1Ho8UPKycH6SPKImbg%2Foym%2F3%2BgiB08GKy6TFazoBBXnxWVxDcRXXXFkHsthUGG00QWuRAcpziqBCXgit1fVYFS%2BJ6oUyXK3Y873L7YpBnU1tJ0pSNH%2FqiIJ0Swr2W6z4DdYFRAlqpIXA1B0FY6kBju5%2FDp%2Fr7%2Bc0PEm0KCkPqnNLl1mnE6GTDa2jxU%2Brwopt6dDd0Mzd%2F3Iefxe6jm9d%2FhCHpibw%2FKVJvHDpA7w8ew3Wlj7HVuPLXPbmlIjp0Iu%2FTFx8V4lsjZ3v7EnLDxcIlLjDYAyfP%2FN6tLvtOHdtYhz%2FvLyIf%2FrmNp6%2FMoW72o9zF0cHOXdLZ6Rp17Nwc3wMLk9N1qO2hhZveXrB37uSNdExpxeWpifg69mrsHLzU7wyd51bvTHDrS7c4BZnrnChC2%2FD0tVpWF2cX7pwbrjSTjtiEEuzksO6moe1maVwtu81Zumzufd%2FWFx4cP%2FbLyL3QjNwL%2FQxrN29gx%2FevRP58auFX2%2FNfTIeCAR4Xd0mxDAMIXC7ENN9SmtvNxtphkE2O418Pt%2BWM28OZIyMDKvODg9ph4cGc4cG38oM9vXtsNloZLPZEMuyj5JiIeSg6UccpFWMm0WMw7GZZZhNNKmu1WpFZrMZWcwWZLZYkIU8%2BwaQ2UTAMetVJg7Qf7xZ2y9K2xlZAAAAAElFTkSuQmCC';
-                countingImg.style.cssText = 'position: absolute; right: 0; bottom: -28px;';
+                countingImg.style.cssText = 'position: absolute; top: 0; right: 0; opacity: 1; z-index: 3200;';
 
                 honorWrapper = document.createElement('div');
                 honorWrapper.className = 'honor-wrapper';
-                honorWrapper.style.cssText = 'position: absolute; top: 1.2vh; right: 3vw; cursor: pointer; z-index: 3000; display: inline-block; pointer-events: auto;';
+                honorWrapper.style.cssText = 'position: absolute; top: 4.4vh; right: 3vw; cursor: pointer; z-index: 3000; display: inline-block; pointer-events: auto;';
 
                 const hallImg = document.createElement('img');
                 hallImg.src = 'dia_trophy_playing.webp';
-                hallImg.style.cssText = 'width: 6vw; height: auto; display: block; z-index: 3000;';
+                hallImg.style.cssText = 'width: 5vw; height: auto; display: block; z-index: 3000; opacity: 1;';
 
                 const honorText = document.createElement('div');
                 honorText.className = 'honor-text';
