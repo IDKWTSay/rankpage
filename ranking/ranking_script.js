@@ -73,6 +73,7 @@ function createTables(id, streamerData, container) {
 
     const periodTablesContainer = document.createElement('div');
     periodTablesContainer.className = 'period-tables';
+    let allTimePanel = null;
 
     const periods = ['top_all_time', 'top_7_days', 'top_30_days'];
     const periodNames = {
@@ -84,6 +85,14 @@ function createTables(id, streamerData, container) {
     periods.forEach(period => {
         const periodContainer = document.createElement('div');
         periodContainer.className = 'period-container';
+        if (period === 'top_all_time') {
+            periodContainer.classList.add('alltime-panel');
+            periodContainer.setAttribute('role', 'button');
+            periodContainer.setAttribute('tabindex', '0');
+            periodContainer.setAttribute('aria-expanded', 'false');
+            allTimePanel = periodContainer;
+        }
+
         const periodTitle = document.createElement('h3');
         periodTitle.textContent = periodNames[period];
         periodTitle.style.marginLeft = "30px";
@@ -187,6 +196,30 @@ function createTables(id, streamerData, container) {
         periodContainer.appendChild(table);
         periodTablesContainer.appendChild(periodContainer);
     });
+
+    if (allTimePanel) {
+        const setAllTimeExpanded = (expanded) => {
+            allTimePanel.classList.toggle('is-expanded', expanded);
+            periodTablesContainer.classList.toggle('alltime-expanded', expanded);
+            allTimePanel.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        };
+
+        setAllTimeExpanded(false);
+
+        const toggleAllTimePanel = (event) => {
+            if (event.target.closest('a, button, input, select, textarea')) return;
+            const isExpanded = allTimePanel.classList.contains('is-expanded');
+            setAllTimeExpanded(!isExpanded);
+        };
+
+        allTimePanel.addEventListener('click', toggleAllTimePanel);
+        allTimePanel.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleAllTimePanel(event);
+            }
+        });
+    }
 
     idContainer.appendChild(periodTablesContainer);
     container.appendChild(idContainer);

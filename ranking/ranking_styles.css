@@ -587,7 +587,7 @@ h3 {
     font-size: 18px;
     color: #F4F4F4;
     pointer-events: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
 }
 
 .honor-wrapper:hover .honor-text {
@@ -1053,7 +1053,12 @@ h3 {
 }
 
 .period-tables {
-    grid-template-columns: 0.75fr 1fr 1fr;
+    grid-template-columns: 0.27fr 1fr 1fr;
+    transition: grid-template-columns 0.24s ease;
+}
+
+.period-tables.alltime-expanded {
+    grid-template-columns: 0.9fr 1fr 1fr;
 }
 
 .period-container th,
@@ -1114,51 +1119,81 @@ h3 {
 }
 
 .period-container.alltime-panel {
-    width: 52%;
-    min-width: 64px;
-    max-width: 120px;
-    justify-self: end;
+    position: relative;
+    min-height: 82px;
     overflow: hidden;
     cursor: pointer;
-    transition: width 0.24s ease, max-width 0.24s ease;
+    background: rgba(238, 238, 238, 0.95);
+    transition: background-color 1.5s ease;
 }
 
-.period-container.alltime-panel h3,
-.period-container.alltime-panel table {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.period-container.alltime-panel::after {
-    content: "전체";
-    display: block;
-    width: 100%;
+.period-container.alltime-panel h3 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+    width: calc(100% - 18px);
+    max-width: calc(100% - 18px);
+    margin: 0 !important;
+    padding: 0;
     text-align: center;
-    font-weight: 700;
     color: #6d2944;
-    line-height: 1.3;
-    padding-top: 26px;
+    font-weight: 700;
+    transform: translate(-50%, 0);
+    transition: top 1.5s ease;
 }
 
-.period-container.alltime-panel:focus,
-.period-container.alltime-panel:focus-within {
-    width: 100%;
-    max-width: none;
+.period-container.alltime-panel table {
+    margin-top: 30px;
+    opacity: 0;
+    max-height: 0;
+    pointer-events: none;
+    filter: blur(18px);
+    transform: translateY(16px) scale(0.985);
+    transition: opacity 1s ease, transform 1s ease, max-height 1s ease, filter 1s ease;
+}
+
+.period-container.alltime-panel:not(.is-expanded):hover h3 {
+    top: 12px;
+}
+
+.period-container.alltime-panel:not(.is-expanded):hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.period-container.alltime-panel:not(.is-expanded):hover table {
+    opacity: 0.3;
+    max-height: 240px;
+    pointer-events: none;
+    filter: blur(14px);
+    transform: translateY(10px) scale(0.99);
+    transition-delay: 0.5s, 0.5s, 0.5s, 0.5s;
+}
+
+.period-container.alltime-panel.is-expanded {
     cursor: default;
-    outline: none;
+    background: rgba(255, 251, 253, 0.96);
 }
 
-.period-container.alltime-panel:focus h3,
-.period-container.alltime-panel:focus table,
-.period-container.alltime-panel:focus-within h3,
-.period-container.alltime-panel:focus-within table {
+.period-container.alltime-panel.is-expanded h3 {
+    position: static;
+    width: auto;
+    max-width: none;
+    margin: 0 0 8px !important;
+    margin-left: 26px !important;
+    padding: 0;
+    text-align: left;
+    transform: none;
+}
+
+.period-container.alltime-panel.is-expanded table {
+    margin-top: 0;
     opacity: 1;
+    max-height: 2000px;
     pointer-events: auto;
-}
-
-.period-container.alltime-panel:focus::after,
-.period-container.alltime-panel:focus-within::after {
-    display: none;
+    filter: blur(0);
+    transform: translateY(0) scale(1);
+    transition-delay: 0s, 0s, 0s, 0s;
 }
 
 .corner-image {
