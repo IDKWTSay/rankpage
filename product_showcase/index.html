@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOOP 실녹기 소개</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow bg-glow-a"></div>
+  <div class="bg-glow bg-glow-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">SOOP <span>실녹기</span></a>
+    <nav class="topnav">
+      <a href="#features">핵심 기능</a>
+      <a href="#editor">클립 편집기</a>
+      <a href="#vod">VOD 다운로드</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap reveal">
+      <div class="hero-copy">
+        
+        <h1>SOOP 실녹기 소개</h1>
+        <p>
+          <span class="intro-emphasis">VPN 없이도 고화질 실시간 녹화</span>가 가능하며, 실시간 클립 저장과 VOD 다운로드를 한 번에 처리할 수 있습니다.
+          길이가 긴 VOD도 필요한 구간만 잘라 빠르게 다운로드할 수 있습니다.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="download-btn"
+            href="https://drive.google.com/uc?export=download&id=1ilJHR_cPDDZdycUHGVBjv-gVYuw8nZF4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            실녹기 다운로드
+          </a>
+          <sub class="download-version">v1.4.1</sub>
+        </div>
+      </div>
+      <div class="image-slot hero-shot">
+        <img src="main.png" alt="SOOP 실녹기 메인 화면 스크린샷">
+      </div>
+    </section>
+
+    <section id="features" class="wrap reveal">
+      <div class="notice-box">
+        <p>
+          동봉된 압축파일에는 비밀번호가 설정되어 있습니다.
+          비밀번호를 모르시는 경우 개발자에게 문의해 주세요.
+        </p>
+        <p class="notice-mail">
+          <a href="mailto:roman100j12@gmail.com">roman100j12@gmail.com</a>
+        </p>
+      </div>
+      <h2>핵심 기능 요약</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>VPN 없이 고화질 실시간 녹화</h3>
+          <p>
+            별도 VPN 설정 없이도 고화질 실시간 녹화를 지원하며,
+            녹화 예약이 가능해 원하는 시간에 자동으로 녹화를 시작할 수 있습니다.
+          </p>
+        </article>
+        <article class="card">
+          <h3>실시간 클립 저장</h3>
+          <p>
+            방송을 보면서 필요한 장면을 바로 클립으로 딸 수 있어,
+            별도 후작업 없이 원하는 구간을 빠르게 확보할 수 있습니다.
+          </p>
+        </article>
+        <article class="card">
+          <h3>VOD 다운로드/부분 다운로드</h3>
+          <p>
+            VOD 전체 다운로드는 물론, 길이가 긴 VOD도 필요한 구간만 잘라
+            더 빠르게 내려받을 수 있습니다.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="editor" class="wrap split reveal">
+      <div>
+        <h2>클립 편집기 기능</h2>
+        <ul class="feature-list">
+          <li class="editor-feature active" data-focus="crop"><strong>크롭 편집</strong>: 영상에서 필요한 영역만 선택해 저장</li>
+          <li class="editor-feature" data-focus="multi"><strong>다중 구간 편집</strong>: 여러 구간을 지정해 한 번에 편집</li>
+          <li><strong>다양한 저장 포맷</strong>: 용도에 맞게 출력 형식 선택</li>
+        </ul>
+      </div>
+      <div class="stacked-shots">
+        <figure class="image-slot shot-card editor-demo" data-focus="crop">
+          <div class="editor-visual">
+            <img src="clip_editor.png" alt="클립 편집기 전체 화면">
+
+            <div class="focus-layer layer-crop" aria-hidden="true">
+              <div class="crop-box">
+                <span class="crop-handle h-tl"></span>
+                <span class="crop-handle h-t"></span>
+                <span class="crop-handle h-tr"></span>
+                <span class="crop-handle h-r"></span>
+                <span class="crop-handle h-br"></span>
+                <span class="crop-handle h-b"></span>
+                <span class="crop-handle h-bl"></span>
+                <span class="crop-handle h-l"></span>
+              </div>
+            </div>
+
+            <div class="focus-layer layer-multi" aria-hidden="true">
+              <div class="timeline-focus">
+                <span class="clip-segment segment-a"></span>
+                <span class="clip-segment segment-b"></span>
+                <span class="clip-segment segment-c"></span>
+                <span class="playhead"></span>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <span class="focus-caption focus-caption-crop">크롭: 필요한 화면 영역만 남겨 저장</span>
+            <span class="focus-caption focus-caption-multi">다중 구간: 여러 구간을 한 번에 저장</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="vod" class="wrap split reveal">
+      <div>
+        <h2>VOD 다운로드 기능</h2>
+        <ul class="feature-list">
+          <li><strong>부분 다운로드</strong>: 긴 VOD에서 필요한 구간만 선택해 빠르게 저장</li>
+          <li><strong>원클릭 다운로드</strong>: 브라우저에서
+            <img class="inline-clip-icon" src="clip.png" alt="클립 다운로드 아이콘">
+            아이콘만 클릭하면 바로 다운로드</li>
+        </ul>
+      </div>
+      <div class="stacked-shots">
+        <figure class="image-slot shot-card partial-shot">
+          <img src="partial_download.png" alt="VOD 부분 다운로드 구간 선택 화면">
+          <figcaption>VOD 부분 다운로드 구간 선택 화면</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
