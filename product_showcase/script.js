@@ -35,7 +35,6 @@ if (downloadButton) {
   downloadButton.addEventListener("click", trackDownloadClick);
 }
 
-// Open these URLs to read current values.
 window.showcaseCounterUrls = {
   visits: `${COUNT_API_BASE}/v1/${COUNT_NAMESPACE}/${COUNTER_KEYS.visits}`,
   downloads: `${COUNT_API_BASE}/v1/${COUNT_NAMESPACE}/${COUNTER_KEYS.downloads}`,
